@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "QX50mc8Q",
+        "filename": "androidtestlib/src/com/android/test/runner/AndroidJUnitRunner.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1002621
+      },
+      "writtenOn": "2013-02-28T23:14:48Z",
+      "side": 1,
+      "message": "So it seems subclasses need to override a method only to call another method.\n\nWould a cleaner approach be to create \n\nprotected RunListener createRunListener() , and let subclasses override that if necessary\n\nif we want to support multiple listeners , could use\nprotected List\u003cRunListener\u003e createRunListeners()",
+      "revId": "e6474eee990683ccc86fb8d4292e0d338470dab6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
