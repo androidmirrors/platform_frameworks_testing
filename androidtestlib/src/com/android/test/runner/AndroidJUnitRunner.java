@@ -139,6 +139,10 @@ public class AndroidJUnitRunner extends Instrumentation {
 
     private Bundle mArguments;
 
+    private JUnitCore mTestRunner;
+
+    private List<RunListener> mListeners;
+
     @Override
     public void onCreate(Bundle arguments) {
         super.onCreate(arguments);
@@ -190,14 +194,15 @@ public class AndroidJUnitRunner extends Instrumentation {
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         PrintStream writer = new PrintStream(byteArrayOutputStream);
-        List<RunListener> listeners = new ArrayList<RunListener>();
+        mListeners = new ArrayList<RunListener>();
 
         try {
-            JUnitCore testRunner = new JUnitCore();
-            addListeners(listeners, testRunner, writer);
+            mTestRunner = new JUnitCore();
+            onTestRunnerCreated();
+            addListeners(writer);
 
             TestRequest testRequest = buildRequest(getArguments(), writer);
-            Result result = testRunner.run(testRequest.getRequest());
+            Result result = mTestRunner.run(testRequest.getRequest());
             result.getFailures().addAll(testRequest.getFailures());
             Log.i(LOG_TAG, String.format("Test run complete. %d tests, %d failed, %d ignored",
                     result.getRunCount(), result.getFailureCount(), result.getIgnoreCount()));
@@ -210,37 +215,53 @@ public class AndroidJUnitRunner extends Instrumentation {
 
         } finally {
             Bundle results = new Bundle();
-            reportRunEnded(listeners, writer, results);
+            reportRunEnded(writer, results);
             writer.close();
             results.putString(Instrumentation.REPORT_KEY_STREAMRESULT,
                     String.format("\n%s",
                             byteArrayOutputStream.toString()));
+            mListeners = null;
+            mTestRunner = null;
             finish(Activity.RESULT_OK, results);
         }
 
     }
 
-    private void addListeners(List<RunListener> listeners, JUnitCore testRunner,
-            PrintStream writer) {
+    /**
+     * Called after the test runner is set-up. Provides an opportunity to call
+     * {@link #addListener(RunListener)}.
+     */
+    protected void onTestRunnerCreated() {
+    }
+
+    private void addListeners(PrintStream writer) {
         if (getBooleanArgument(ARGUMENT_SUITE_ASSIGNMENT)) {
-            addListener(listeners, testRunner, new SuiteAssignmentPrinter(writer));
+            addListener(new SuiteAssignmentPrinter(writer));
         } else {
-            addListener(listeners, testRunner, new TextListener(writer));
-            addListener(listeners, testRunner, new InstrumentationResultPrinter(this));
-            addDelayListener(listeners, testRunner);
-            addCoverageListener(listeners, testRunner);
+            addListener(new TextListener(writer));
+            addListener(new InstrumentationResultPrinter(this));
+            addDelayListener();
+            addCoverageListener();
         }
     }
 
-    private void addListener(List<RunListener> list, JUnitCore testRunner, RunListener listener) {
-        list.add(listener);
-        testRunner.addListener(listener);
+    /**
+     * Adds a JUnit {@link RunListener} to the current test runner.
+     */
+    protected final void addListener(RunListener listener) {
+        if (mListeners == null) {
+            throw new IllegalStateException(
+                    "You may only call addListener from onTestRunnerCreated");
+        }
+
+        mListeners.add(listener);
+        mTestRunner.addListener(listener);
     }
 
-    private void addCoverageListener(List<RunListener> list, JUnitCore testRunner) {
+    private void addCoverageListener() {
         if (getBooleanArgument(ARGUMENT_COVERAGE)) {
             String coverageFilePath = getArguments().getString(ARGUMENT_COVERAGE_PATH);
-            addListener(list, testRunner, new CoverageListener(this, coverageFilePath));
+            addListener(new CoverageListener(this, coverageFilePath));
         }
     }
 
@@ -248,20 +269,20 @@ public class AndroidJUnitRunner extends Instrumentation {
      * Sets up listener to inject {@link #ARGUMENT_DELAY_MSEC}, if specified.
      * @param testRunner
      */
-    private void addDelayListener(List<RunListener> list, JUnitCore testRunner) {
+    private void addDelayListener() {
         try {
             Object delay = getArguments().get(ARGUMENT_DELAY_MSEC);  // Accept either string or int
             if (delay != null) {
                 int delayMsec = Integer.parseInt(delay.toString());
-                addListener(list, testRunner, new DelayInjector(delayMsec));
+                addListener(new DelayInjector(delayMsec));
             }
         } catch (NumberFormatException e) {
             Log.e(LOG_TAG, "Invalid delay_msec parameter", e);
         }
     }
 
-    private void reportRunEnded(List<RunListener> listeners, PrintStream writer, Bundle results) {
-        for (RunListener listener : listeners) {
+    private void reportRunEnded(PrintStream writer, Bundle results) {
+        for (RunListener listener : mListeners) {
             if (listener instanceof InstrumentationRunListener) {
                 ((InstrumentationRunListener)listener).instrumentationRunFinished(writer, results);
             }
