@@ -16,6 +16,24 @@
       "revId": "e6474eee990683ccc86fb8d4292e0d338470dab6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "Qd2tKAdo",
+        "filename": "androidtestlib/src/com/android/test/runner/AndroidJUnitRunner.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1002975
+      },
+      "writtenOn": "2013-03-01T01:44:05Z",
+      "side": 1,
+      "message": "That\u0027s fine. I didn\u0027t know if we needed ability to manipulate the test runner itself.",
+      "parentUuid": "QX50mc8Q",
+      "revId": "e6474eee990683ccc86fb8d4292e0d338470dab6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
