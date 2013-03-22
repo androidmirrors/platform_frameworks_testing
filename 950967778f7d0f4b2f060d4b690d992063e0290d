@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "SV2ungZ8",
+        "filename": "androidtestlib/src/com/android/test/runner/TestRequestBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1014491
+      },
+      "writtenOn": "2013-03-22T00:46:09Z",
+      "side": 1,
+      "message": "tabs-\u003espaces, also trailing ws",
+      "revId": "950967778f7d0f4b2f060d4b690d992063e0290d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "SV0usRYI",
+        "filename": "androidtestlib/tests/src/com/android/test/runner/TestRequestBuilderTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1014491
+      },
+      "writtenOn": "2013-03-22T00:46:09Z",
+      "side": 1,
+      "message": "leading whitespaces",
+      "revId": "950967778f7d0f4b2f060d4b690d992063e0290d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
