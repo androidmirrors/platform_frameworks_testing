@@ -31,6 +31,7 @@ import android.os.Trace;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+import android.view.IWindowManager;
 import android.view.KeyEvent;
 import android.view.Surface;
 import android.view.accessibility.AccessibilityEvent;
@@ -608,6 +609,16 @@ public class UiDevice {
     public void unfreezeRotation() throws RemoteException {
         Tracer.trace();
         getAutomatorBridge().getInteractionController().unfreezeRotation();
+    }
+
+    /**
+     * HDMI is plugged on device.
+     * @return true if HDMI is plugged
+     * @throws RemoteException
+     */
+    public boolean isHdmiPlugged() throws RemoteException {
+        Tracer.trace();
+        return getAutomatorBridge().getInteractionController().isHdmiPlugged();
     }
 
     /**
