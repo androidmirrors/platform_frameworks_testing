@@ -23,6 +23,7 @@ package com.android.uiautomator.core {
     method public java.lang.String getProductName();
     method public boolean hasAnyWatcherTriggered();
     method public boolean hasWatcherTriggered(java.lang.String);
+    method public boolean isHdmiPlugged() throws android.os.RemoteException;
     method public boolean isNaturalOrientation();
     method public boolean isScreenOn() throws android.os.RemoteException;
     method public boolean pressBack();

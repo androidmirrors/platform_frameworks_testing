@@ -654,6 +654,10 @@ class InteractionController {
         return pm.isScreenOn();
     }
 
+    public boolean isHdmiPlugged() throws RemoteException {
+        return mWindowManager.isHdmiPlugged();
+    }
+
     private static boolean injectEventSync(InputEvent event) {
         return InputManager.getInstance().injectInputEvent(event,
                 InputManager.INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH);
