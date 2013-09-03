@@ -72,6 +72,7 @@ public class Launcher {
     public static void main(String[] args) {
         // show a meaningful process name in `ps`
         Process.setArgV0("uiautomator");
+        Process.setUid(Process.SHELL_UID);
         if (args.length >= 1) {
             Command command = findCommand(args[0]);
             if (command != null) {
