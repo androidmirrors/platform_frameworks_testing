@@ -294,7 +294,7 @@ public class UiAutomatorTestRunner {
             try {
                 testMethod = test.getClass().getMethod(testName);
                 // Report total number of iterations, if test is repetitive
-                if (testMethod.isAnnotationPresent(RepetitiveTest.class)) {
+                if (testMethod != null && testMethod.isAnnotationPresent(RepetitiveTest.class)) {
                     int numIterations = testMethod.getAnnotation(RepetitiveTest.class)
                             .numIterations();
                     mTestResult.putInt(REPORT_KEY_NUM_ITERATIONS, numIterations);
