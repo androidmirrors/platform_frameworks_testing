@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f0f222e5_3209ae5f",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-24T23:47:41Z",
+      "side": 1,
+      "message": "nit: newline to match formatting with the rest of the project",
+      "range": {
+        "startLine": 58,
+        "startChar": 9,
+        "endLine": 58,
+        "endChar": 10
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0d42a38_d00f0267",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnDebug.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-24T23:47:41Z",
+      "side": 1,
+      "message": "javadoc all public mehtods",
+      "range": {
+        "startLine": 62,
+        "startChar": 4,
+        "endLine": 62,
+        "endChar": 10
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
