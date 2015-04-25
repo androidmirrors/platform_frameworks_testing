@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "30375a6d_61f416d2",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "mIsDebugging",
+      "range": {
+        "startLine": 45,
+        "startChar": 30,
+        "endLine": 45,
+        "endChar": 41
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500f6eb1_6af4d7d1",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 16
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f0f222e5_3209ae5f",
         "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
         "patchSetId": 5
@@ -25,6 +71,144 @@
     },
     {
       "key": {
+        "uuid": "500f6eb1_0aeb1bf4",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "remove this just let it throw",
+      "range": {
+        "startLine": 58,
+        "startChar": 53,
+        "endLine": 58,
+        "endChar": 62
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500f6eb1_4af113e0",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "new ln",
+      "range": {
+        "startLine": 71,
+        "startChar": 9,
+        "endLine": 71,
+        "endChar": 10
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "30375a6d_21ee0e04",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 71,
+        "startChar": 55,
+        "endLine": 71,
+        "endChar": 64
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "30375a6d_81f11ae3",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/DisableOnDebugTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "Use ExpectedException Rule here, makes the test more readable.",
+      "range": {
+        "startLine": 83,
+        "startChar": 10,
+        "endLine": 84,
+        "endChar": 9
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500f6eb1_aad9af72",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnDebug.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "Please rename this to DisableOnAndroidDebug, the reason being is that when we switch to 4.12 we will have 2 rules with the same name, but different behavior. This can be a source of confusion for developers. As soon as we switch over to 4.12 we can then just extend from DisableOnDebug and override isDebugging.",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 27
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "500f6eb1_8adeeb56",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnDebug.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "mDelegate",
+      "range": {
+        "startLine": 60,
+        "startChar": 27,
+        "endLine": 60,
+        "endChar": 35
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b0d42a38_d00f0267",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnDebug.java",
         "patchSetId": 5
@@ -41,6 +225,29 @@
         "startChar": 4,
         "endLine": 62,
         "endChar": 10
+      },
+      "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "30375a6d_c1de4258",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnDebug.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-25T12:01:44Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 63,
+        "startChar": 8,
+        "endLine": 63,
+        "endChar": 12
       },
       "revId": "02339ec8b536ea758b8ab873e9186f354866ebfa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
