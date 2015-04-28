@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0d99e70_d2524838",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-28T23:31:58Z",
+      "side": 1,
+      "message": "nit: since we diverged from JUnit 4.12 naming convention might as well add \"Rule\" to the end to match our naming conventions.",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 34
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d0d99e70_92ea80a4",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-28T23:31:58Z",
+      "side": 1,
+      "message": "add @param",
+      "range": {
+        "startLine": 64,
+        "startChar": 5,
+        "endLine": 64,
+        "endChar": 7
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d0d99e70_d2c1282f",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-28T23:31:58Z",
+      "side": 1,
+      "message": "rename to rule?",
+      "range": {
+        "startLine": 65,
+        "startChar": 42,
+        "endLine": 65,
+        "endChar": 50
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0f222e5_4a9a2448",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-28T23:31:58Z",
+      "side": 1,
+      "message": "javadoc or inheritDoc",
+      "range": {
+        "startLine": 69,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 5
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0d42a38_bdc1c62f",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-28T23:31:58Z",
+      "side": 1,
+      "message": "add @return",
+      "range": {
+        "startLine": 81,
+        "startChar": 5,
+        "endLine": 81,
+        "endChar": 7
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
