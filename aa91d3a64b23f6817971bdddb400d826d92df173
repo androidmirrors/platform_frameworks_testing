@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "f0f222e5_34629f14",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-04-29T17:40:03Z",
+      "side": 1,
+      "message": "No strong feelings either way. I\u0027ll leave it up to Jake since he\u0027s the main user at this point :)",
+      "parentUuid": "90e3a61e_bbb8d3d9",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 34
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d0d99e70_92ea80a4",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
         "patchSetId": 6
