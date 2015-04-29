@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "90e3a61e_bbb8d3d9",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-04-29T14:01:22Z",
+      "side": 1,
+      "message": "It\u0027s already quite a long class name. I\u0027d let you decide but i\u0027m happy with omitting the Rule here.",
+      "parentUuid": "d0d99e70_d2524838",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 34
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d0d99e70_92ea80a4",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
         "patchSetId": 6
