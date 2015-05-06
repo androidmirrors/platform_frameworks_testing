@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "0d595d45_0b29613c",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1010199
+      },
+      "writtenOn": "2015-05-06T06:28:49Z",
+      "side": 1,
+      "message": "I\u0027d like to not rename for two reasons: despite the addition of \"Android\" I\u0027d still like to closely tie in to the first-party rule, and also rules are not always suffixed in this way. The rule with which this will probably be used most is simply called \"Timeout\".",
+      "parentUuid": "f0f222e5_34629f14",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 34
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d0d99e70_92ea80a4",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
         "patchSetId": 6
@@ -84,6 +108,30 @@
       "writtenOn": "2015-04-28T23:31:58Z",
       "side": 1,
       "message": "add @param",
+      "range": {
+        "startLine": 64,
+        "startChar": 5,
+        "endLine": 64,
+        "endChar": 7
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4d5fd527_adb149c2",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1010199
+      },
+      "writtenOn": "2015-05-06T06:28:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0d99e70_92ea80a4",
       "range": {
         "startLine": 64,
         "startChar": 5,
@@ -119,6 +167,30 @@
     },
     {
       "key": {
+        "uuid": "ed5b293d_2a3f7fda",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1010199
+      },
+      "writtenOn": "2015-05-06T06:28:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0d99e70_d2c1282f",
+      "range": {
+        "startLine": 65,
+        "startChar": 42,
+        "endLine": 65,
+        "endChar": 50
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f0f222e5_4a9a2448",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
         "patchSetId": 6
@@ -142,6 +214,30 @@
     },
     {
       "key": {
+        "uuid": "ed5b293d_4a4ab388",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1010199
+      },
+      "writtenOn": "2015-05-06T06:28:49Z",
+      "side": 1,
+      "message": "I thought inherit was the default if absent... added anyways.",
+      "parentUuid": "f0f222e5_4a9a2448",
+      "range": {
+        "startLine": 69,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 5
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b0d42a38_bdc1c62f",
         "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
         "patchSetId": 6
@@ -153,6 +249,30 @@
       "writtenOn": "2015-04-28T23:31:58Z",
       "side": 1,
       "message": "add @return",
+      "range": {
+        "startLine": 81,
+        "startChar": 5,
+        "endLine": 81,
+        "endChar": 7
+      },
+      "revId": "aa91d3a64b23f6817971bdddb400d826d92df173",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed5b293d_6a457778",
+        "filename": "rules/src/main/java/android/support/test/rule/DisableOnAndroidDebug.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1010199
+      },
+      "writtenOn": "2015-05-06T06:28:49Z",
+      "side": 1,
+      "message": "I basically copied the one from JUnit, but, FOR THE RECORD!, I\u0027m strongly opposed to this. The Javadoc description describes clearly the return type. You see this also with redundant and/or needless @param tags all the time.",
+      "parentUuid": "b0d42a38_bdc1c62f",
       "range": {
         "startLine": 81,
         "startChar": 5,
