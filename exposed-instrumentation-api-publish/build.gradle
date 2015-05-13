@@ -21,3 +21,13 @@ group = 'com.android.support.test'
 
 apply from: '../androidJar.gradle'
 apply from: '../publish.gradle'
+
+android {
+  packagingOptions {
+    exclude 'LICENSE.txt'
+  }
+
+  lintOptions {
+    abortOnError false
+  }
+}
