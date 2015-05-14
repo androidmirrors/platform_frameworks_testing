@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d92d967_0e66ebd9",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-05-14T21:42:14Z",
+      "side": 1,
+      "message": "move imports back",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 72
+      },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6d92d967_0e7d0b6a",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-05-14T21:42:14Z",
+      "side": 1,
+      "message": "re-add blank line",
+      "range": {
+        "startLine": 20,
+        "startChar": 14,
+        "endLine": 20,
+        "endChar": 15
+      },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad885137_d062c286",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-05-14T21:42:14Z",
+      "side": 1,
+      "message": "re-add blank line",
+      "range": {
+        "startLine": 23,
+        "startChar": 7,
+        "endLine": 23,
+        "endChar": 10
+      },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6d92d967_eeaeff60",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/DrawerActionsTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-05-14T21:42:14Z",
+      "side": 1,
+      "message": "static imports before imports, please move those back",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 54
+      },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
