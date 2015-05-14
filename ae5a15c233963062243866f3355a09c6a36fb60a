@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8dc2ad55_fd331b6e",
+        "filename": "exposed-instrumentation-api-publish/build.gradle",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1073158
+      },
+      "writtenOn": "2015-05-14T19:22:33Z",
+      "side": 1,
+      "message": "this was just copy/paste from another project.  removed.",
+      "parentUuid": "8d970d54_8c90271c",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 3
+      },
+      "revId": "ae5a15c233963062243866f3355a09c6a36fb60a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad885137_2d548dd9",
         "filename": "exposed-instrumentation-api-publish/build.gradle",
         "patchSetId": 1
@@ -36,6 +60,24 @@
       "writtenOn": "2015-05-14T10:30:21Z",
       "side": 1,
       "message": "please move this above applies and after group",
+      "revId": "ae5a15c233963062243866f3355a09c6a36fb60a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4d9a7579_462e1211",
+        "filename": "exposed-instrumentation-api-publish/build.gradle",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1073158
+      },
+      "writtenOn": "2015-05-14T19:22:33Z",
+      "side": 1,
+      "message": "done.",
+      "parentUuid": "ad885137_2d548dd9",
       "revId": "ae5a15c233963062243866f3355a09c6a36fb60a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
