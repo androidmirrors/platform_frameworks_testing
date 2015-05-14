@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "4d9a7579_41543cda",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1063833
+      },
+      "writtenOn": "2015-05-14T21:42:26Z",
+      "side": 1,
+      "message": "please stick with the original import order.",
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6d92d967_0e66ebd9",
         "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerActions.java",
         "patchSetId": 1
@@ -19,6 +36,63 @@
         "endLine": 38,
         "endChar": 72
       },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8dc2ad55_48e60f32",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1063833
+      },
+      "writtenOn": "2015-05-14T21:42:26Z",
+      "side": 1,
+      "message": "although I agree that this would have been a good idea with the original API, I would prefer not to break existing tests by changing how the method behaves if the drawer is already opened. Feel free to add open/closeDrawerChecked methods that throw.",
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4d9a7579_61494041",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063833
+      },
+      "writtenOn": "2015-05-14T21:42:26Z",
+      "side": 1,
+      "message": "rm // here and below",
+      "range": {
+        "startLine": 68,
+        "startChar": 35,
+        "endLine": 68,
+        "endChar": 37
+      },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8dc2ad55_68dbcb68",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/DrawerMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063833
+      },
+      "writtenOn": "2015-05-14T21:42:26Z",
+      "side": 1,
+      "message": "avoid whitespace changes.",
       "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -65,6 +139,23 @@
         "endLine": 23,
         "endChar": 10
       },
+      "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8dc2ad55_a8f403d4",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/DrawerActionsTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1063833
+      },
+      "writtenOn": "2015-05-14T21:42:26Z",
+      "side": 1,
+      "message": "revert import order",
       "revId": "d3a44dfd5c219c3c7c5d2daf520d94b2790eaf36",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
