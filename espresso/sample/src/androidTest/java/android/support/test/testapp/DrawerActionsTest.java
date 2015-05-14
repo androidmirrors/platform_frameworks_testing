@@ -16,6 +16,10 @@
 
 package android.support.test.testapp;
 
+import android.support.test.espresso.contrib.DrawerActions;
+import android.test.ActivityInstrumentationTestCase2;
+import android.test.suitebuilder.annotation.LargeTest;
+
 import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -30,16 +34,11 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 
-import android.support.test.espresso.contrib.DrawerActions;
-
-import android.test.ActivityInstrumentationTestCase2;
-import android.test.suitebuilder.annotation.LargeTest;
-
 /**
  * Demonstrates use of {@link DrawerActions}.
  */
 @LargeTest
-public class DrawerActionsTest  extends ActivityInstrumentationTestCase2<DrawerActivity> {
+public class DrawerActionsTest extends ActivityInstrumentationTestCase2<DrawerActivity> {
 
   public DrawerActionsTest() {
     super(DrawerActivity.class);
@@ -66,7 +65,6 @@ public class DrawerActionsTest  extends ActivityInstrumentationTestCase2<DrawerA
     onView(withId(R.id.drawer_layout)).check(matches(isClosed()));
   }
 
-  @SuppressWarnings("unchecked")
   public void testDrawerOpenAndClick() {
     openDrawer(R.id.drawer_layout);
 
