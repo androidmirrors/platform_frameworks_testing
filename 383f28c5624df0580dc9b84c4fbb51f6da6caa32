@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d92d967_2ec3a7dd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-05-15T09:23:01Z",
+      "side": 1,
+      "message": "Super-Nit: this is not part of this CL anymore, please remove",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 32
+      },
+      "revId": "383f28c5624df0580dc9b84c4fbb51f6da6caa32",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
