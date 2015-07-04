@@ -37,6 +37,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withContentDesc
 import static android.support.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
 import static android.support.test.espresso.matcher.ViewMatchers.withHint;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withInputType;
 import static android.support.test.espresso.matcher.ViewMatchers.withParent;
 import static android.support.test.espresso.matcher.ViewMatchers.withSpinnerText;
 import static android.support.test.espresso.matcher.ViewMatchers.withTagKey;
@@ -54,6 +55,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.test.InstrumentationTestCase;
 import android.test.UiThreadTest;
+import android.text.InputType;
 import android.text.Spannable;
 import android.text.style.ForegroundColorSpan;
 import android.text.util.Linkify;
@@ -82,6 +84,8 @@ import java.util.List;
  * Unit tests for {@link ViewMatchers}.
  */
 public class ViewMatchersTest extends InstrumentationTestCase {
+
+  private static final int UNRECOGNIZED_INPUT_TYPE = 999999;
 
   private Context context;
 
@@ -612,4 +616,23 @@ public class ViewMatchersTest extends InstrumentationTestCase {
       // Good, this is expected.
     }
   }
+
+  public void testWithInputTypeReturnsIfCorrectInput() {
+    EditText editText = new EditText(context);
+    editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+    assertTrue(withInputType(InputType.TYPE_CLASS_NUMBER).matches(editText));
+  }
+
+  public void testWithInputTypeReturnsFalseIfIncorrectInput() {
+    EditText editText = new EditText(context);
+    editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+    assertFalse(withInputType(InputType.TYPE_CLASS_TEXT).matches(editText));
+  }
+
+  public void testWithInputTypeShouldNotCrashIfInputTypeIsNotRecognized() {
+    EditText editText = new EditText(context);
+    editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+    assertFalse(withInputType(UNRECOGNIZED_INPUT_TYPE).matches(editText));
+  }
+
 }
