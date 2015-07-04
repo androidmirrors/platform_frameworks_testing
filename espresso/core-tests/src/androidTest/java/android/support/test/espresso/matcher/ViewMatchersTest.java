@@ -19,6 +19,7 @@ package android.support.test.espresso.matcher;
 import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
 import static android.support.test.espresso.matcher.ViewMatchers.hasContentDescription;
 import static android.support.test.espresso.matcher.ViewMatchers.hasDescendant;
+import static android.support.test.espresso.matcher.ViewMatchers.hasErrorText;
 import static android.support.test.espresso.matcher.ViewMatchers.hasImeAction;
 import static android.support.test.espresso.matcher.ViewMatchers.hasLinks;
 import static android.support.test.espresso.matcher.ViewMatchers.hasSibling;
@@ -611,5 +612,17 @@ public class ViewMatchersTest extends InstrumentationTestCase {
     } catch (NullPointerException e) {
       // Good, this is expected.
     }
+  }
+
+  public void testHasErrorTextReturnsTrueWithCorrectErrorString() {
+    EditText editText = new EditText(context);
+    editText.setError("TEST");
+    assertTrue(hasErrorText("TEST").matches(editText));
+  }
+
+  public void testHasErrorTextReturnsFalseWithDifferentErrorString() {
+    EditText editText = new EditText(context);
+    editText.setError("TEST");
+    assertFalse(hasErrorText("TEST1").matches(editText));
   }
 }

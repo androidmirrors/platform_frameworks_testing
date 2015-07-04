@@ -38,6 +38,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.webkit.WebView;
 import android.widget.Checkable;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -1107,6 +1108,21 @@ public final class ViewMatchers {
       @Override
       public boolean matchesSafely(WebView webView) {
         return webView.getSettings().getJavaScriptEnabled();
+      }
+    };
+  }
+
+  public static Matcher<View> hasErrorText(final String expectedError) {
+    return new BoundedMatcher<View, EditText>(EditText.class) {
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("with error: " + expectedError);
+      }
+
+      @Override
+      protected boolean matchesSafely(EditText view) {
+        return expectedError.equals(view.getError());
       }
     };
   }
