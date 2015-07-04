@@ -38,6 +38,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.webkit.WebView;
 import android.widget.Checkable;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -1110,4 +1111,24 @@ public final class ViewMatchers {
       }
     };
   }
+
+  /**
+   * Returns a matcher that matches {@link android.text.InputType}.
+   */
+  public static Matcher<View> withInputType(final int inputType) {
+    return new BoundedMatcher<View, EditText>(EditText.class) {
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("is view input type equal to: ");
+        description.appendText(Integer.toString(inputType));
+      }
+
+      @Override
+      protected boolean matchesSafely(EditText view) {
+        return view.getInputType() == inputType;
+      }
+    };
+  }
+
 }
