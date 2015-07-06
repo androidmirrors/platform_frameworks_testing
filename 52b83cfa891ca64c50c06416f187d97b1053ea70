@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "13b8a53c_36fa80ec",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1115,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-07-06T14:19:34Z",
+      "side": 1,
+      "message": "please add a second method which takes a matcher",
+      "range": {
+        "startLine": 1115,
+        "startChar": 43,
+        "endLine": 1115,
+        "endChar": 69
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "931655ff_5d6c6ffd",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1115,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-07-06T14:19:34Z",
+      "side": 1,
+      "message": "Please add Javadoc",
+      "range": {
+        "startLine": 1115,
+        "startChar": 30,
+        "endLine": 1115,
+        "endChar": 42
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b317d9fa_3b489fe0",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1125,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-07-06T14:19:34Z",
+      "side": 1,
+      "message": "toString()",
+      "range": {
+        "startLine": 1125,
+        "startChar": 41,
+        "endLine": 1125,
+        "endChar": 49
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
