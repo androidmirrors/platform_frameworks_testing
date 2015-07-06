@@ -48,6 +48,54 @@
     },
     {
       "key": {
+        "uuid": "1386e596_a6983254",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1115,
+      "author": {
+        "id": 1067778
+      },
+      "writtenOn": "2015-07-06T15:16:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "13b8a53c_36fa80ec",
+      "range": {
+        "startLine": 1115,
+        "startChar": 43,
+        "endLine": 1115,
+        "endChar": 69
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d38fedab_611c5099",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1115,
+      "author": {
+        "id": 1067778
+      },
+      "writtenOn": "2015-07-06T15:16:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "931655ff_5d6c6ffd",
+      "range": {
+        "startLine": 1115,
+        "startChar": 30,
+        "endLine": 1115,
+        "endChar": 42
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b317d9fa_3b489fe0",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2015-07-06T14:19:34Z",
       "side": 1,
       "message": "toString()",
+      "range": {
+        "startLine": 1125,
+        "startChar": 41,
+        "endLine": 1125,
+        "endChar": 49
+      },
+      "revId": "52b83cfa891ca64c50c06416f187d97b1053ea70",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d38fedab_81195caa",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1125,
+      "author": {
+        "id": 1067778
+      },
+      "writtenOn": "2015-07-06T15:16:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b317d9fa_3b489fe0",
       "range": {
         "startLine": 1125,
         "startChar": 41,
