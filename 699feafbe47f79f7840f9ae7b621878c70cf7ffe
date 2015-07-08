@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8f4ce42_02392cdd",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2015-07-08T08:55:11Z",
+      "side": 1,
+      "message": "why do we need this here we shouldn\u0027t use internal mockito impls here as these APIs can change and break our tests",
+      "range": {
+        "startLine": 79,
+        "startChar": 19,
+        "endLine": 79,
+        "endChar": 27
+      },
+      "revId": "699feafbe47f79f7840f9ae7b621878c70cf7ffe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
