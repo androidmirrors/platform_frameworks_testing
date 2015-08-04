@@ -207,6 +207,7 @@ public class RunnerArgs {
                 if (intValue < 0) {
                     throw new NumberFormatException(name + " can not be negative");
                 }
+                return intValue;
             }
             return -1;
         }
