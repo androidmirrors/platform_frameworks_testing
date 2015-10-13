@@ -213,7 +213,7 @@ public class AndroidJUnitRunner extends MonitoringInstrumentation {
      *
      * @return the Bundle object
      */
-    private Bundle getArguments(){
+    public Bundle getArguments() {
         return mArguments;
     }
 
