@@ -1,0 +1,257 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "80561044_d73f3c5f",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/TallRowAdapterDataIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "nit: 2015",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e0842cce_912a4627",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/TallRowAdapterDataIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "nit: add a linebreak to avoid reaching character limit.\nconsider using JUnit 4 with ActivityTestRule instead",
+      "range": {
+        "startLine": 40,
+        "startChar": 46,
+        "endLine": 40,
+        "endChar": 47
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "00486077_1dcd233a",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/TallRowAdapterDataIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "Move to previous line",
+      "range": {
+        "startLine": 61,
+        "startChar": 8,
+        "endLine": 61,
+        "endChar": 9
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e06d0cee_8f76a5b8",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/TallRowAdapterDataIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 66,
+        "startChar": 8,
+        "endLine": 66,
+        "endChar": 9
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "009dc025_757208f0",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/DataInteraction.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "linebreak",
+      "range": {
+        "startLine": 138,
+        "startChar": 36,
+        "endLine": 138,
+        "endChar": 37
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80561044_975ca4cb",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/DataInteraction.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "linebreak",
+      "range": {
+        "startLine": 157,
+        "startChar": 36,
+        "endLine": 157,
+        "endChar": 37
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "40933818_66ac9fb2",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/DataInteraction.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "spaces",
+      "range": {
+        "startLine": 206,
+        "startChar": 14,
+        "endLine": 206,
+        "endChar": 16
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e06d0cee_ef8401c6",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/DataInteraction.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "define at the top of the class\nprivate static final String TAG \u003d \"DataInteraction\";",
+      "range": {
+        "startLine": 213,
+        "startChar": 17,
+        "endLine": 213,
+        "endChar": 32
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "009dc025_356c8012",
+        "filename": "espresso/sample/src/main/java/android/support/test/testapp/TallRowListActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "2015",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e0842cce_3146daff",
+        "filename": "espresso/sample/src/main/res/layout/tall_row_list_activity.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "2015",
+      "range": {
+        "startLine": 3,
+        "startChar": 18,
+        "endLine": 3,
+        "endChar": 22
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "204d6487_73932a7f",
+        "filename": "espresso/sample/src/main/res/layout/tall_row_list_item.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2015-12-04T22:29:07Z",
+      "side": 1,
+      "message": "2015",
+      "range": {
+        "startLine": 3,
+        "startChar": 18,
+        "endLine": 3,
+        "endChar": 22
+      },
+      "revId": "a173be83e68cf1c9777d7fadbb9b8c094eddb563",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
