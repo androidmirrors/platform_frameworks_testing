@@ -56,16 +56,22 @@ public class IntentsTestRule<T extends Activity> extends ActivityTestRule<T> {
         super(activityClass, initialTouchMode, launchActivity);
     }
 
+    private boolean activityLaunched;
+
     @Override
     protected void afterActivityLaunched() {
         Intents.init();
+        activityLaunched = true;
         super.afterActivityLaunched();
     }
 
     @Override
     protected void afterActivityFinished() {
         super.afterActivityFinished();
-        Intents.release();
+
+        if (activityLaunched) {
+            Intents.release();
+        }
     }
 
 }
