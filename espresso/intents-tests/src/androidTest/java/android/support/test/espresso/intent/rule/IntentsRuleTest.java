@@ -31,7 +31,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * IntentsRule tests
+ * Unit tests for {@IntentsTestRule}.
  */
 @RunWith(AndroidJUnit4.class)
 public class IntentsRuleTest {
@@ -111,6 +111,14 @@ public class IntentsRuleTest {
     intentsTestRule.apply(base, mDescriptionStub);
 
     assertThat(IntentStubberRegistry.isLoaded(), is(false));
+  }
+
+  @Test
+  public void withFailedToLaunchActivity_WillNotCallToReleaseIntents() {
+    // If an Activity started with an IntentsTestRule fails to launch, Intents should not be released because it was never initialized.
+    final IntentsTestRule<StubActivity> intentsTestRule = new IntentsTestRule<>(StubActivity.class, false, false);
+    // By not launching an Activity with IntentsTestRule, and instead calling afterActivity() directly, we mimic a failure-to-launch Activity.
+    intentsTestRule.afterActivityFinished(); // should not throw NPE by trying to release Intents
   }
 
   private void launchStubActivityWithRule(IntentsTestRule<StubActivity> intentsTestRule) {
