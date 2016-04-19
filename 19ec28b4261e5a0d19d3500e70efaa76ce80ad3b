@@ -278,6 +278,29 @@
     },
     {
       "key": {
+        "uuid": "c8983c92_024e4a6c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 33,
+        "startChar": 2,
+        "endLine": 33,
+        "endChar": 8
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2868f801_24ff5cc3",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
         "patchSetId": 1
@@ -317,6 +340,29 @@
         "startChar": 10,
         "endLine": 36,
         "endChar": 17
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_627636a4",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "If you choose to keep this method please add javadoc and explicitly point out the fact that it will use DEFAULT_MAX_ATTEMPTS which is 10.",
+      "range": {
+        "startLine": 39,
+        "startChar": 2,
+        "endLine": 39,
+        "endChar": 8
       },
       "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
@@ -554,6 +600,29 @@
     },
     {
       "key": {
+        "uuid": "c8983c92_82901a0c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 437,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "I would consider removing this method in favor of the latter more explicit method. We\u0027re trying to keep the Espresso API lean and I think removing support for the overloaded method will result in less confusion/errors from the test author.",
+      "range": {
+        "startLine": 437,
+        "startChar": 27,
+        "endLine": 437,
+        "endChar": 42
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c8983c92_22f6eea0",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
         "patchSetId": 1
@@ -577,6 +646,52 @@
     },
     {
       "key": {
+        "uuid": "c8983c92_82c7fa14",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 445,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "100 char limit",
+      "range": {
+        "startLine": 445,
+        "startChar": 84,
+        "endLine": 445,
+        "endChar": 103
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_42c1f2fd",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 446,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "\u003cp\u003e before this",
+      "range": {
+        "startLine": 446,
+        "startChar": 5,
+        "endLine": 446,
+        "endChar": 6
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c8983c92_224f0eb3",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
         "patchSetId": 1
@@ -593,6 +708,52 @@
         "startChar": 98,
         "endLine": 448,
         "endChar": 104
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_a25c3e1f",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 450,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 450,
+        "startChar": 88,
+        "endLine": 450,
+        "endChar": 107
+      },
+      "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_82425a3c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 453,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T17:33:30Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 453,
+        "startChar": 92,
+        "endLine": 453,
+        "endChar": 103
       },
       "revId": "19ec28b4261e5a0d19d3500e70efaa76ce80ad3b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
