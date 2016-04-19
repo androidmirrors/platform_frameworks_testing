@@ -427,4 +427,24 @@ public final class ViewActions {
     checkNotNull(uriMatcher);
     return actionWithAssertions(new OpenLinkAction(linkTextMatcher, uriMatcher));
   }
+
+  /**
+   * Returns an action that performs given {@code ViewAction} on the view until view matches the
+   * desired {@code Matcher<View>}. It will repeat the action given no of times until view matches
+   * the desired {@code Matcher<View>}
+   *
+   * <p> @param action action to be performed repeatedly </p>
+   * <p> @param desiredStateMatcher action is performed repeatedly until view matches this view
+   * matcher </p>
+   * <p> @param maxRepeats max no of times for which this action to be performed if view doesn't
+   * match the given view matcher </p>
+   */
+  public static ViewAction repeatedlyUntil(final ViewAction action,
+                                           final Matcher<View> desiredStateMatcher,
+                                           final int maxRepeats) {
+    checkNotNull(action);
+    checkNotNull(desiredStateMatcher);
+    return actionWithAssertions(
+        new RepeatActionUntilViewState(action, desiredStateMatcher, maxRepeats));
+  }
 }

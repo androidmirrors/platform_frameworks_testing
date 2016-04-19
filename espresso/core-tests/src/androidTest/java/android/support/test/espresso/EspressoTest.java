@@ -30,7 +30,9 @@ import static org.hamcrest.Matchers.any;
 import static org.hamcrest.Matchers.hasValue;
 import static org.hamcrest.Matchers.instanceOf;
 
+import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.action.ViewActions;
+import android.support.test.espresso.base.DefaultFailureHandler;
 import android.support.test.testapp.ActionBarTestActivity;
 import android.support.test.testapp.KeyboardTestActivity;
 import android.support.test.testapp.MainActivity;
@@ -64,6 +66,12 @@ public class EspressoTest extends ActivityInstrumentationTestCase2<MainActivity>
   public void setUp() throws Exception {
     super.setUp();
     getActivity();
+  }
+
+  @Override
+  public void tearDown() throws Exception {
+    super.tearDown();
+    Espresso.setFailureHandler(new DefaultFailureHandler(InstrumentationRegistry.getTargetContext()));
   }
 
   @SuppressWarnings("unchecked")
