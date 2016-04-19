@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8983c92_9665fc8a",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/EspressoTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "line limit",
+      "range": {
+        "startLine": 74,
+        "startChar": 97,
+        "endLine": 74,
+        "endChar": 102
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_16fa0cd3",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "nit: replace with \":\"",
+      "range": {
+        "startLine": 39,
+        "startChar": 51,
+        "endLine": 39,
+        "endChar": 64
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_d60384aa",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "nit: add newline after \u003cp\u003e",
+      "range": {
+        "startLine": 40,
+        "startChar": 3,
+        "endLine": 40,
+        "endChar": 6
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_d6df0483",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "number",
+      "range": {
+        "startLine": 433,
+        "startChar": 68,
+        "endLine": 433,
+        "endChar": 70
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_36aab0de",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "or PerformException will be thrown if the max repeat number is reached without a match.",
+      "range": {
+        "startLine": 434,
+        "startChar": 37,
+        "endLine": 434,
+        "endChar": 38
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_b64fe00c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 439,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "number",
+      "range": {
+        "startLine": 439,
+        "startChar": 31,
+        "endLine": 439,
+        "endChar": 33
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c8983c92_76395880",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/ViewActions.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 440,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-19T23:16:37Z",
+      "side": 1,
+      "message": "Sorry for the confusion, remove all the \u003cp\u003e and \u003cp/\u003e from here",
+      "range": {
+        "startLine": 436,
+        "startChar": 0,
+        "endLine": 440,
+        "endChar": 38
+      },
+      "revId": "66034a0720181b6b77e07e27027d1c71bb4f2a14",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
