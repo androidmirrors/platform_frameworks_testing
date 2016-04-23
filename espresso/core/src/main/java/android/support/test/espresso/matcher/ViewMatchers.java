@@ -21,6 +21,10 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 import static org.hamcrest.Matchers.is;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.test.espresso.util.HumanReadables;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
@@ -1160,4 +1164,28 @@ public final class ViewMatchers {
     };
   }
 
+  /**
+   * Returns a matcher that matches {@link android.view.View} based on background resource.
+   */
+  public static Matcher<View> hasBackground(final int drawableId) {
+    return new TypeSafeMatcher<View>() {
+      @Override
+      protected boolean matchesSafely(View view) {
+        return assertDrawable(view.getBackground(), drawableId, view);
+      }
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("has background with drawable ID: " + drawableId);
+      }
+    };
+  }
+
+  private static boolean assertDrawable(Drawable actual, int expected, View v) {
+    if (actual == null) return false;
+    Bitmap expectedBitmap = BitmapFactory.decodeResource(v.getContext().getResources(), expected);
+    boolean bitmapMatches = ((BitmapDrawable) actual).getBitmap().sameAs(expectedBitmap);
+    expectedBitmap.recycle();
+    return bitmapMatches;
+  }
 }
