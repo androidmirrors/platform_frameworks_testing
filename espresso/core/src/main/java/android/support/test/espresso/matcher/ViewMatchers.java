@@ -21,6 +21,12 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 import static org.hamcrest.Matchers.is;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.test.annotation.Beta;
 import android.support.test.espresso.util.HumanReadables;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
@@ -28,7 +34,9 @@ import com.google.common.collect.Iterables;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.support.test.espresso.util.ImageComparator;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,12 +58,15 @@ import org.hamcrest.Matchers;
 import org.hamcrest.StringDescription;
 import org.hamcrest.TypeSafeMatcher;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
  * A collection of hamcrest matchers that match {@link View}s.
  */
 public final class ViewMatchers {
+
+  private static final String TAG = "ViewMatchers";
 
   private ViewMatchers() {}
 
@@ -1160,4 +1171,49 @@ public final class ViewMatchers {
     };
   }
 
+  /**
+   * Returns a matcher that matches {@link android.view.View} based on background resource.
+   * <p>
+   * Note: This method compares images at a pixel level and might have significant performance
+   * implications for larger bitmaps.
+   */
+  @Beta
+  public static Matcher<View> hasBackground(final int drawableId) {
+    return new TypeSafeMatcher<View>() {
+      @Override
+      protected boolean matchesSafely(View view) {
+        return assertDrawable(view.getBackground(), drawableId, view);
+      }
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("has background with drawable ID: " + drawableId);
+      }
+    };
+  }
+
+  private static boolean assertDrawable(Drawable actual, int expectedId, View v) {
+    if (null == actual || !(actual instanceof BitmapDrawable)) {
+      return false;
+    }
+
+    Bitmap expectedBitmap = null;
+    try {
+      expectedBitmap = BitmapFactory.decodeResource(v.getContext().getResources(), expectedId);
+      if (Build.VERSION.SDK_INT >= 12) {
+        return ((BitmapDrawable) actual).getBitmap().sameAs(expectedBitmap);
+      } else {
+        return ImageComparator.isSame(((BitmapDrawable) actual).getBitmap(), expectedBitmap);
+      }
+    } catch (OutOfMemoryError error) {
+      Log.e(TAG, error.getMessage(), error.getCause());
+      return false;
+
+    } finally {
+      if (null != expectedBitmap) {
+        expectedBitmap.recycle();
+        expectedBitmap = null;
+      }
+    }
+  }
 }
