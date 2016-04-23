@@ -1159,5 +1159,4 @@ public final class ViewMatchers {
       }
     };
   }
-
 }
