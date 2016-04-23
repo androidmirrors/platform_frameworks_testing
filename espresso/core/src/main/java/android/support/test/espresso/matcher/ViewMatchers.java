@@ -21,6 +21,10 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 import static org.hamcrest.Matchers.is;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.test.espresso.util.HumanReadables;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
@@ -50,6 +54,7 @@ import org.hamcrest.Matchers;
 import org.hamcrest.StringDescription;
 import org.hamcrest.TypeSafeMatcher;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
@@ -1160,4 +1165,49 @@ public final class ViewMatchers {
     };
   }
 
+  /**
+   * Returns a matcher that matches {@link android.view.View} based on background resource.
+   */
+  public static Matcher<View> hasBackground(final int drawableId) {
+    return new TypeSafeMatcher<View>() {
+      @Override
+      protected boolean matchesSafely(View view) {
+        return assertDrawable(view.getBackground(), drawableId, view);
+      }
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("has background with drawable ID: " + drawableId);
+      }
+    };
+  }
+
+  private static boolean assertDrawable(Drawable actual, int expected, View v) {
+    if (actual == null) {
+      return false;
+    }
+
+    if (actual instanceof BitmapDrawable) {
+      Bitmap expectedBitmap = BitmapFactory.decodeResource(v.getContext().getResources(), expected);
+      boolean bitmapMatches = compareBitmaps(((BitmapDrawable) actual).getBitmap(), expectedBitmap);
+      expectedBitmap.recycle();
+      return bitmapMatches;
+    } else {
+      return false;
+    }
+  }
+
+  private static boolean compareBitmaps(Bitmap img1, Bitmap img2) {
+    if (img1.getWidth() == img2.getWidth() && img1.getHeight() == img2.getHeight()) {
+      int[] img1Pixels = new int[img1.getWidth() * img1.getHeight()];
+      int[] img2Pixels = new int[img2.getWidth() * img2.getHeight()];
+
+      img1.getPixels(img1Pixels, 0, img1.getWidth(), 0, 0, img1.getWidth(), img1.getHeight());
+      img2.getPixels(img2Pixels, 0, img2.getWidth(), 0, 0, img2.getWidth(), img2.getHeight());
+
+      return Arrays.equals(img1Pixels, img2Pixels);
+    } else {
+      return false;
+    }
+  }
 }
