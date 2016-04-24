@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c86bdc68_49e7a1ca",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-24T17:46:43Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 39,
+        "startChar": 51,
+        "endLine": 39,
+        "endChar": 52
+      },
+      "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_e9ec55ad",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-24T17:46:43Z",
+      "side": 1,
+      "message": "please wrap this in a \u003ccode\u003e element like this:\n\n * \u003ccode\u003e\n * onView(withId(R.id.my_pager))\n *            .perform(repeatedlyUntil(swipeUp(), hasDescendant(withText(\"Child 4\")), maxRepeats),\n *            click());\n * \u003c/code\u003e",
+      "range": {
+        "startLine": 40,
+        "startChar": 3,
+        "endLine": 44,
+        "endChar": 7
+      },
+      "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_09ea0990",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-24T17:46:43Z",
+      "side": 1,
+      "message": "no need for closing \u003cp\u003e tags. It is ok just to use this pattern:\n\nText\n\u003cp\u003e\nMore Text",
+      "range": {
+        "startLine": 44,
+        "startChar": 3,
+        "endLine": 44,
+        "endChar": 7
+      },
+      "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_b007c0fd",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-24T17:46:43Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 44,
+        "startChar": 3,
+        "endLine": 44,
+        "endChar": 7
+      },
+      "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
