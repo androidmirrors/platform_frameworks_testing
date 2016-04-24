@@ -115,6 +115,30 @@
       "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_099c4933",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/action/RepeatActionUntilViewState.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-24T20:09:26Z",
+      "side": 1,
+      "message": "That also works, we just normally use \u003ccode\u003e in this particular codebase. But I agree we should just start switching to @code for new stuff. Fingers crossed it does not break javadoc generation.",
+      "parentUuid": "683030ce_674f12b2",
+      "range": {
+        "startLine": 40,
+        "startChar": 3,
+        "endLine": 44,
+        "endChar": 7
+      },
+      "revId": "9422be601863d99b5332f56f80a4a664faeb9cd0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
