@@ -28,6 +28,7 @@ import com.google.common.collect.Iterables;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
@@ -1160,4 +1161,29 @@ public final class ViewMatchers {
     };
   }
 
+
+  /**
+   * Returns a matcher that matches {@link android.widget.TextView} based on it's color.
+   */
+  public static Matcher<View> hasTextColor(final int colorResId) {
+    return new BoundedMatcher<View, TextView>(TextView.class) {
+      private Context context = null;
+
+      @Override
+      protected boolean matchesSafely(TextView textView) {
+        context = textView.getContext();
+        int textViewColor = textView.getCurrentTextColor();
+        return textViewColor == ContextCompat.getColor(textView.getContext(), colorResId);
+      }
+
+      @Override
+      public void describeTo(Description description) {
+        String colorId = String.valueOf(colorResId);
+        if (context != null) {
+          colorId = context.getResources().getResourceName(colorResId);
+        }
+        description.appendText("has color with ID " + colorId);
+      }
+    };
+  }
 }
