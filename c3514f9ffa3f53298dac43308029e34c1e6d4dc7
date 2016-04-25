@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c86bdc68_7a090513",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1176,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:17:39Z",
+      "side": 1,
+      "message": "According the ContextCompat java doc:\n\n\"Starting in M, the returned color will be styled for the specified Context\u0027s theme.\" \n\nhttp://developer.android.com/reference/android/support/v4/content/ContextCompat.html\n\ndid you test it to make sure it still works as expected on api 23 and above",
+      "range": {
+        "startLine": 1176,
+        "startChar": 32,
+        "endLine": 1176,
+        "endChar": 45
+      },
+      "revId": "c3514f9ffa3f53298dac43308029e34c1e6d4dc7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_1a29e97a",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1176,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:17:39Z",
+      "side": 1,
+      "message": "reuse the var \"context\"",
+      "range": {
+        "startLine": 1176,
+        "startChar": 55,
+        "endLine": 1176,
+        "endChar": 76
+      },
+      "revId": "c3514f9ffa3f53298dac43308029e34c1e6d4dc7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
