@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c86bdc68_5a5a01fd",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1185,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:31:54Z",
+      "side": 1,
+      "message": "null \u003d\u003d actual to match the rest of the code style",
+      "range": {
+        "startLine": 1185,
+        "startChar": 18,
+        "endLine": 1185,
+        "endChar": 22
+      },
+      "revId": "dbc5f2302bba9e2d45f470a1775a419263a8da1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_7a5b4503",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1185,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:31:54Z",
+      "side": 1,
+      "message": "new line and add {}",
+      "range": {
+        "startLine": 1185,
+        "startChar": 23,
+        "endLine": 1185,
+        "endChar": 24
+      },
+      "revId": "dbc5f2302bba9e2d45f470a1775a419263a8da1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_baa21d1e",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1187,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:31:54Z",
+      "side": 1,
+      "message": "this is API level 12, Espresso goes back to API 8",
+      "range": {
+        "startLine": 1187,
+        "startChar": 66,
+        "endLine": 1187,
+        "endChar": 72
+      },
+      "revId": "dbc5f2302bba9e2d45f470a1775a419263a8da1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c86bdc68_da78314d",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1187,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-25T19:31:54Z",
+      "side": 1,
+      "message": "what about ClassCastException?",
+      "range": {
+        "startLine": 1187,
+        "startChar": 30,
+        "endLine": 1187,
+        "endChar": 44
+      },
+      "revId": "dbc5f2302bba9e2d45f470a1775a419263a8da1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
