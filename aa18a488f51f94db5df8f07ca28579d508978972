@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28539928_c9ab55e5",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1186,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:08:36Z",
+      "side": 1,
+      "message": "we use null \u003d\u003d actual in Espresso codebase for better readability",
+      "range": {
+        "startLine": 1186,
+        "startChar": 8,
+        "endLine": 1186,
+        "endChar": 22
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28539928_09cf2dc2",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1194,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:08:36Z",
+      "side": 1,
+      "message": "try{} catch (OOM) {return false; Log.e()} finally expectedBitmap.recycle() expectedBitmap \u003d null",
+      "range": {
+        "startLine": 1191,
+        "startChar": 6,
+        "endLine": 1194,
+        "endChar": 27
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28539928_89b55d43",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1195,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:08:36Z",
+      "side": 1,
+      "message": "remove else branch, just return false at the bottom...",
+      "range": {
+        "startLine": 1195,
+        "startChar": 6,
+        "endLine": 1195,
+        "endChar": 12
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28539928_8968bd78",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1200,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:08:36Z",
+      "side": 1,
+      "message": "Think about creating 2 impls. One for \u003e\u003d API 12 using BM.sameAs() and another one for \u003c API 12 using this approach. Since sameAs is implemented natively it might be more efficient than this solution and we can take advantage of it.\n\nif (android.os.build.version.sdk_int \u003e\u003d 12) {\n  compareBitmapsV12(...)\n} else {\n  compareBitmaps(...)\n}",
+      "range": {
+        "startLine": 1200,
+        "startChar": 25,
+        "endLine": 1200,
+        "endChar": 39
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28539928_69822164",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1209,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:08:36Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 1209,
+        "startChar": 6,
+        "endLine": 1209,
+        "endChar": 12
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
