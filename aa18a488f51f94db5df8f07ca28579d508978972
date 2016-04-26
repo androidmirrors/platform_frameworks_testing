@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "28539928_a975b923",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1171,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-26T19:31:25Z",
+      "side": 1,
+      "message": "Please mention that this method will compare bitmaps at a pixel level and might have significant performance implications for larger bitmaps...",
+      "range": {
+        "startLine": 1171,
+        "startChar": 30,
+        "endLine": 1171,
+        "endChar": 43
+      },
+      "revId": "aa18a488f51f94db5df8f07ca28579d508978972",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28539928_c9ab55e5",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
         "patchSetId": 2
