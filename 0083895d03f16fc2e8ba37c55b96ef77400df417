@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28447987_735f6263",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-27T18:32:36Z",
+      "side": 1,
+      "message": "Can you add a test that will explicitly go through your #compareBitmaps(...) helper method flow",
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28447987_d3c9166c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1174,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-27T18:32:36Z",
+      "side": 1,
+      "message": "nit: add \"\u003cp\u003e\"",
+      "range": {
+        "startLine": 1174,
+        "startChar": 3,
+        "endLine": 1174,
+        "endChar": 4
+      },
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28447987_73ec82d8",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1192,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-27T18:32:36Z",
+      "side": 1,
+      "message": "nit: \"expectedId\"",
+      "range": {
+        "startLine": 1192,
+        "startChar": 61,
+        "endLine": 1192,
+        "endChar": 69
+      },
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28447987_738802f8",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1210,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-27T18:32:36Z",
+      "side": 1,
+      "message": "expectedBitmap !\u003d null",
+      "range": {
+        "startLine": 1210,
+        "startChar": 10,
+        "endLine": 1210,
+        "endChar": 32
+      },
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
