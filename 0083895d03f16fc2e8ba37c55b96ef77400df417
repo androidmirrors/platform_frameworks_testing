@@ -85,6 +85,30 @@
       "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28447987_93e82e8e",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1210,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-27T19:16:48Z",
+      "side": 1,
+      "message": "Just to clarify we use null \u003d\u003d var but var !\u003d null . This is easier to read.",
+      "parentUuid": "28447987_738802f8",
+      "range": {
+        "startLine": 1210,
+        "startChar": 10,
+        "endLine": 1210,
+        "endChar": 32
+      },
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
