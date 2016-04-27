@@ -20,18 +20,25 @@ import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.Intent;
+import android.support.test.internal.util.ActivityProvider;
 import android.support.test.runner.AndroidJUnit4;
+import android.support.test.runner.MonitoringInstrumentation;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.Description;
 import org.junit.runner.Result;
 import org.junit.runner.RunWith;
+import org.junit.runners.model.Statement;
+import org.mockito.InOrder;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
+import static android.support.test.InstrumentationRegistry.getTargetContext;
 import static org.hamcrest.CoreMatchers.any;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
@@ -284,5 +291,34 @@ public class ActivityTestRuleTest {
     public void customIntentPerTest() {
         Result result = runClasses(CustomIntentPerTest.class);
         assertEquals(0, result.getFailureCount());
+    }
+
+    @Test
+    public void shouldAskInstrumentationToUseGivenActivityProviderAndResetItAfterTest()
+            throws Throwable {
+        ActivityProvider<ActivityFixture> activityProvider =
+                new ActivityProvider<ActivityFixture>() {
+                    @Override
+                    public ActivityFixture getActivity() {
+                        return mMockActivity;
+                    }
+
+                    @Override
+                    public Class<ActivityFixture> getActivityClass() {
+                        return ActivityFixture.class;
+                    }
+                };
+        ActivityTestRule<ActivityFixture> activityTestRule = new ActivityTestRule<>(
+                activityProvider, true, false);
+        MonitoringInstrumentation instrumentation = mock(MonitoringInstrumentation.class);
+        when(instrumentation.getTargetContext()).thenReturn(getTargetContext());
+        activityTestRule.setInstrumentation(instrumentation);
+        Statement baseStatement = mock(Statement.class);
+        activityTestRule.apply(baseStatement, mock(Description.class)).evaluate();
+
+        InOrder inOrder = Mockito.inOrder(instrumentation, baseStatement);
+        inOrder.verify(instrumentation).useActivityProvider(activityProvider);
+        inOrder.verify(baseStatement).evaluate();
+        inOrder.verify(instrumentation).resetActivityProvider();
     }
 }

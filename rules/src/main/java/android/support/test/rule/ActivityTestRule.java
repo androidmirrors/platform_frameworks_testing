@@ -25,6 +25,8 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.annotation.Beta;
+import android.support.test.internal.util.ActivityProvider;
+import android.support.test.runner.MonitoringInstrumentation;
 import android.util.Log;
 
 import static android.support.test.internal.util.Checks.checkNotNull;
@@ -55,6 +57,7 @@ public class ActivityTestRule<T extends Activity> extends UiThreadTestRule {
     private boolean mLaunchActivity = false;
 
     private T mActivity;
+    private ActivityProvider<T> mActivityProvider;
 
     /**
      * Similar to {@link #ActivityTestRule(Class, boolean, boolean)} but with "touch mode" disabled.
@@ -106,6 +109,25 @@ public class ActivityTestRule<T extends Activity> extends UiThreadTestRule {
         mInitialTouchMode = initialTouchMode;
         mLaunchActivity = launchActivity;
         mInstrumentation = InstrumentationRegistry.getInstrumentation();
+    }
+
+    /**
+     * Creates an {@link ActivityTestRule} for the Activity under test.
+     *
+     * @param activityProvider ActivityProvider that will provide instance of Activity to be tested
+     * @param initialTouchMode true if the Activity should be placed into "touch mode" when started
+     * @param launchActivity   true if the Activity should be launched once per
+     *                         <a href="http://junit.org/javadoc/latest/org/junit/Test.html">
+     *                         <code>Test</code></a> method. It will be launched before the first
+     *                         <a href="http://junit.sourceforge.net/javadoc/org/junit/Before.html">
+     *                         <code>Before</code></a> method, and terminated after the last
+     *                         <a href="http://junit.sourceforge.net/javadoc/org/junit/After.html">
+     *                         <code>After</code></a> method.
+     */
+    public ActivityTestRule(ActivityProvider<T> activityProvider, boolean initialTouchMode,
+                            boolean launchActivity) {
+        this(activityProvider.getActivityClass(), initialTouchMode, launchActivity);
+        this.mActivityProvider = activityProvider;
     }
 
     /**
@@ -250,12 +272,22 @@ public class ActivityTestRule<T extends Activity> extends UiThreadTestRule {
 
         @Override
         public void evaluate() throws Throwable {
+            MonitoringInstrumentation instrumentation
+                    = ActivityTestRule.this.mInstrumentation instanceof MonitoringInstrumentation
+                    ? (MonitoringInstrumentation) ActivityTestRule.this.mInstrumentation
+                    : null;
             try {
+                if (mActivityProvider != null && instrumentation != null) {
+                    instrumentation.useActivityProvider(mActivityProvider);
+                }
                 if (mLaunchActivity) {
                     mActivity = launchActivity(getActivityIntent());
                 }
                 mBase.evaluate();
             } finally {
+                if (instrumentation != null) {
+                    instrumentation.resetActivityProvider();
+                }
                 finishActivity();
                 afterActivityFinished();
             }
