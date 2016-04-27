@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28447987_0555f10c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1179,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-27T20:18:17Z",
+      "side": 1,
+      "message": "One last comment from my side please annotate this with @Beta",
+      "range": {
+        "startLine": 1179,
+        "startChar": 30,
+        "endLine": 1179,
+        "endChar": 43
+      },
+      "revId": "5a2b7e903949dbfbee123813e02863d03df1d5b3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
