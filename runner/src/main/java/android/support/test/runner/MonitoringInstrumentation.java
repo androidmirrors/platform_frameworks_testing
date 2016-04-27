@@ -32,6 +32,8 @@ import android.os.MessageQueue.IdleHandler;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.internal.runner.hidden.ExposedInstrumentationApi;
 import android.support.test.internal.runner.intent.IntentMonitorImpl;
+import android.support.test.internal.util.ActivityProvider;
+import android.support.test.internal.util.Checks;
 import android.support.test.runner.intent.IntentStubberRegistry;
 import android.support.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl;
 import android.support.test.internal.runner.lifecycle.ApplicationLifecycleMonitorImpl;
@@ -114,6 +116,7 @@ public class MonitoringInstrumentation extends ExposedInstrumentationApi {
     };
 
     private volatile boolean mFinished = false;
+    private volatile ActivityProvider<?> mActivityProvider;
 
     /**
      * Sets up lifecycle monitoring, and argument registry.
@@ -601,6 +604,35 @@ public class MonitoringInstrumentation extends ExposedInstrumentationApi {
                 parent,
                 id,
                 lastNonConfigurationInstance);
+    }
+
+    @Override
+    public Activity newActivity(ClassLoader cl, String className, Intent intent)
+        throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+        return this.mActivityProvider!=null
+                && mActivityProvider.getActivityClass().getName().equals(className)
+                ? mActivityProvider.getActivity() : super.newActivity(cl, className, intent);
+    }
+
+    /**
+     * Use the given ActivityProvider to create instance of a specific Activity rather than using
+     * default mechanism of Activity instance creation. This can be used to override some of the
+     * behavior in tests e.g. mocking startService() method in Activity under test, to avoid
+     * starting the real service and instead verifying that a particular service was started.
+     *
+     * @param activityProvider ActivityProvider to be used for creating instance of the activity
+     * class returned by ActivityProvider#getActivityClass()
+     */
+    public void useActivityProvider(ActivityProvider<?> activityProvider) {
+        Checks.checkNotNull(activityProvider);
+        mActivityProvider = activityProvider;
+    }
+
+    /**
+     * Reset the activity provider, so that default mechanism of creating activity instance is used
+     */
+    public void resetActivityProvider() {
+        mActivityProvider = null;
     }
 
     /**
