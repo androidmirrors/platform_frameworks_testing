@@ -94,6 +94,29 @@
     },
     {
       "key": {
+        "uuid": "28447987_b86ee984",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 1195,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-27T17:37:01Z",
+      "side": 1,
+      "message": "you can also merge this statement with the null check above and get rid of the entire if statement here.",
+      "range": {
+        "startLine": 1195,
+        "startChar": 8,
+        "endLine": 1195,
+        "endChar": 40
+      },
+      "revId": "c49e123da6ce64053e564ae20d7562c30726cb44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28447987_98ca0db0",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
         "patchSetId": 3
