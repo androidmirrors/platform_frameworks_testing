@@ -22,6 +22,30 @@
       "revId": "cc42e3837d2f66157bb76f6e6ea0c519772c56e1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28447987_45309946",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 1194,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-27T19:54:09Z",
+      "side": 1,
+      "message": "Disregard my last comment here I was missing the !(instanceof) it is correct to use || here...",
+      "parentUuid": "28447987_136c1e8c",
+      "range": {
+        "startLine": 1194,
+        "startChar": 23,
+        "endLine": 1194,
+        "endChar": 25
+      },
+      "revId": "cc42e3837d2f66157bb76f6e6ea0c519772c56e1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
