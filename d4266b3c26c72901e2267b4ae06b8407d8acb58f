@@ -1,0 +1,251 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "480b6d61_fb8cda91",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "@RunWith(AndoridJUnit4.class)\n@MediumTest",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 6
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4880cd13_b05d393b",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "ImageDifferTest",
+      "range": {
+        "startLine": 26,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 32
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "480b6d61_1b90bea4",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "remove use JUnit4 for new tests",
+      "range": {
+        "startLine": 26,
+        "startChar": 33,
+        "endLine": 26,
+        "endChar": 49
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08edf5c9_8299e880",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "@Test remove test prefix from tests",
+      "range": {
+        "startLine": 28,
+        "startChar": 2,
+        "endLine": 28,
+        "endChar": 8
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4880cd13_107e059f",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "recycle and release memory",
+      "range": {
+        "startLine": 28,
+        "startChar": 14,
+        "endLine": 28,
+        "endChar": 40
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "682111e2_8f263657",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 34,
+        "startChar": 14,
+        "endLine": 34,
+        "endChar": 46
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08edf5c9_629e7c68",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 34,
+        "endChar": 8
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4880cd13_706d81f4",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "ImageDiffer",
+      "range": {
+        "startLine": 27,
+        "startChar": 19,
+        "endLine": 27,
+        "endChar": 34
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8801e53f_66d694d7",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "\u003cp\u003e",
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08689501_2990c7fb",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "@link",
+      "range": {
+        "startLine": 35,
+        "startChar": 67,
+        "endLine": 35,
+        "endChar": 73
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "480b6d61_3b3ca283",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:18:20Z",
+      "side": 1,
+      "message": "@TargetAPI",
+      "range": {
+        "startLine": 42,
+        "startChar": 24,
+        "endLine": 42,
+        "endChar": 30
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
