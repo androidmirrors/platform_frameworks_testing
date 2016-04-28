@@ -246,6 +246,30 @@
       "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "480b6d61_3ba662d2",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T18:22:33Z",
+      "side": 1,
+      "message": "Ignore this comment please I did not delete it before I published the comments...",
+      "parentUuid": "480b6d61_3b3ca283",
+      "range": {
+        "startLine": 42,
+        "startChar": 24,
+        "endLine": 42,
+        "endChar": 30
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
