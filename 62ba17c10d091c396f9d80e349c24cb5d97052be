@@ -1,0 +1,153 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08d0953a_fb62e705",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/HasBackgroundMatcherTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "just annotated the entire class with @MediumTest and remove the explicit size annotation from each method.",
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_fb9427f9",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/HasBackgroundMatcherTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "InstrumentationRegistry.getContext() is the JUnit4 way",
+      "range": {
+        "startLine": 45,
+        "startChar": 14,
+        "endLine": 45,
+        "endChar": 47
+      },
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_1b9003fc",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/HasBackgroundMatcherTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "put it in finally block otherwise if the assertion fails it would be missed",
+      "range": {
+        "startLine": 78,
+        "startChar": 4,
+        "endLine": 78,
+        "endChar": 10
+      },
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_dbc04bf3",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/HasBackgroundMatcherTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "same",
+      "range": {
+        "startLine": 91,
+        "startChar": 4,
+        "endLine": 91,
+        "endChar": 11
+      },
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_5bad5b40",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/HasBackgroundMatcher.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "javadoc",
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_7bb0179c",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/HasBackgroundMatcher.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "Move this specific method back to ViewMatcher class and in the body create new HasBackgroundMatcher inline but leave all the logic in this class.",
+      "range": {
+        "startLine": 29,
+        "startChar": 30,
+        "endLine": 29,
+        "endChar": 43
+      },
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_3baa9f2a",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/HasBackgroundMatcher.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T23:15:42Z",
+      "side": 1,
+      "message": "package private",
+      "range": {
+        "startLine": 43,
+        "startChar": 2,
+        "endLine": 43,
+        "endChar": 11
+      },
+      "revId": "62ba17c10d091c396f9d80e349c24cb5d97052be",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
