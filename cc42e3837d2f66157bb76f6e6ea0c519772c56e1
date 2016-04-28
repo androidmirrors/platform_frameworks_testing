@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "28447987_93f30e1a",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 1174,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T16:15:49Z",
+      "side": 1,
+      "message": "add space between * and \u003c",
+      "range": {
+        "startLine": 1174,
+        "startChar": 3,
+        "endLine": 1174,
+        "endChar": 5
+      },
+      "revId": "cc42e3837d2f66157bb76f6e6ea0c519772c56e1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28447987_136c1e8c",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
         "patchSetId": 5
