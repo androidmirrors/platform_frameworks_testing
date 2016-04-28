@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28447987_28e72452",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 1178,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-28T17:06:07Z",
+      "side": 1,
+      "message": "remove you don\u0027t have to close tags",
+      "range": {
+        "startLine": 1178,
+        "startChar": 5,
+        "endLine": 1178,
+        "endChar": 9
+      },
+      "revId": "0cdacd4f90c43f80cc3f7ad449701cf5ec41f71b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
