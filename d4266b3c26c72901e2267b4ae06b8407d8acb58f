@@ -163,6 +163,52 @@
     },
     {
       "key": {
+        "uuid": "e84d01b0_5904046e",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/ImageComparatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T18:31:26Z",
+      "side": 1,
+      "message": "Having this public method means we have to maintain it from this point on which is not what I want to commit to at this time. Please see my other comment where I suggest to create a standalone HasBackgroundMatcher class where this method could live and not be public.",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 34,
+        "endChar": 8
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "682111e2_12ad4999",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 1182,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-04-28T18:31:26Z",
+      "side": 1,
+      "message": "I think its time top create HasBackgroundMatcher class in the matcher package and just reuse it here. \n\nHave all your private/util methods in that class.",
+      "range": {
+        "startLine": 1182,
+        "startChar": 15,
+        "endLine": 1182,
+        "endChar": 30
+      },
+      "revId": "d4266b3c26c72901e2267b4ae06b8407d8acb58f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4880cd13_706d81f4",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/util/ImageComparator.java",
         "patchSetId": 8
