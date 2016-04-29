@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08d0953a_44b9f83d",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "add newln before this line for consistency",
+      "range": {
+        "startLine": 60,
+        "startChar": 4,
+        "endLine": 60,
+        "endChar": 23
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_e49fe4c2",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 130,
+        "startChar": 8,
+        "endLine": 130,
+        "endChar": 12
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_049b00db",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "license",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 7
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_245f1c00",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "Since this will be the public interface devs will use please be more verbose in the comments here on what it is and how you need to use it.",
+      "range": {
+        "startLine": 6,
+        "startChar": 3,
+        "endLine": 6,
+        "endChar": 90
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_c46d08be",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 611,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "spaces",
+      "range": {
+        "startLine": 611,
+        "startChar": 37,
+        "endLine": 611,
+        "endChar": 39
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_a4720c9c",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 626,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "we don\u0027t usually use this in AOSP since we use Hungarian notation",
+      "range": {
+        "startLine": 626,
+        "startChar": 8,
+        "endLine": 626,
+        "endChar": 13
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08d0953a_846830ac",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 633,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-04-29T16:03:51Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 633,
+        "startChar": 8,
+        "endLine": 633,
+        "endChar": 12
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
