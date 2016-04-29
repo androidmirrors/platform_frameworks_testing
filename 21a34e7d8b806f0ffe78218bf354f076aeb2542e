@@ -233,6 +233,30 @@
     },
     {
       "key": {
+        "uuid": "480b6d61_0c1d26ae",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-04-29T20:49:30Z",
+      "side": 1,
+      "message": "This looks better. However i have a question regarding \"premade\". Any specific reason for premade rather than making it on the fly when asked. As per my current implementation, a single ActivityProvider object is supposed to be used multiple times, however each time it returns a new Activity instance and for me it makes sense to return new instance because u may not want old activity instance which has already gone through its life-cycle, to be re-used.",
+      "parentUuid": "28039992_89eb9dc0",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
