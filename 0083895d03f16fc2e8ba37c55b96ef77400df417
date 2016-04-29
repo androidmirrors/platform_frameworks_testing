@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "28447987_f32b7282",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1103428
+      },
+      "writtenOn": "2016-04-29T18:21:27Z",
+      "side": 1,
+      "message": "We can not add an explicit test for compareBitmaps() unless there is a way to mock Build.VERSION.SDK_INT",
+      "parentUuid": "28447987_735f6263",
+      "revId": "0083895d03f16fc2e8ba37c55b96ef77400df417",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28447987_d3c9166c",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
         "patchSetId": 4
