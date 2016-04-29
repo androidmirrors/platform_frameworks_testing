@@ -257,6 +257,30 @@
     },
     {
       "key": {
+        "uuid": "28039992_2cf277ab",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T21:05:38Z",
+      "side": 1,
+      "message": "when I read your code I thought you just had one instance ;) But I probably read it too quickly",
+      "parentUuid": "480b6d61_0c1d26ae",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
