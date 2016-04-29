@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "28039992_09e20db0",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "@Beta ? perhaps.\n\nI think we should consider providing interception points to most of Instrumentation\u0027s methods. If we come up with a more generic approach, we may want to change this signature / behaviour.\n\nBut I do not want to block this change on that :)",
+      "range": {
+        "startLine": 127,
+        "startChar": 11,
+        "endLine": 127,
+        "endChar": 27
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "08d0953a_e49fe4c2",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 1
@@ -64,6 +87,29 @@
         "startChar": 92,
         "endLine": 81,
         "endChar": 109
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28039992_094b2da2",
+        "filename": "runner/src/androidTest/java/android/support/test/runner/MonitoringInstrumentationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "I do not like ignoring the exception, it could make debugging the failure case more frustrating.\n\nSuggestion, wrap your runnable in a FutureTask, keep a reference to the future task local to the method, submit the future task to runonmainsync call .get() on the future task (letting its exception kill the test if necsesary) and then do your assertions",
+      "range": {
+        "startLine": 88,
+        "startChar": 24,
+        "endLine": 88,
+        "endChar": 45
       },
       "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
@@ -140,6 +186,76 @@
     },
     {
       "key": {
+        "uuid": "28039992_66ce4e95",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "if its a public interface it should not be in internalutil",
+      "parentUuid": "08d0953a_245f1c00",
+      "range": {
+        "startLine": 6,
+        "startChar": 3,
+        "endLine": 6,
+        "endChar": 90
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28039992_89eb9dc0",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "If we\u0027re going to allow test authors to replace insturmentation\u0027s newActivity logic, we should give them all the information instrumentation has, and let them choose whether to serve the request, or let the default implementation serve the request.\n\nEG:\n\ninterface InterceptingActivityFactory {\n\n  // let users decide whether they\u0027re interested in handling activity creation themselves. If returns true, create will be called, else instrumentation should call super.newActivity\n  boolean shouldIntercept(ClassLoader cl, String className, Intent intent);\n  \n  // provide your activity by implementing this method, you should never recieve a call on this method unless shouldIntercept() returned true.\n  Activity create(ClassLoader cl, String, className, Intent intent);\n  \n}\n\n/** instrumentation can assign its interceptor to this default class so we do not need to do null checks everywhere\n**/\npublic final class DefaultInterceptingActivityFactoryy implelemts ... {\n   @Override\n   shouldIntercept(...) return false;\n   create(...) throw;\n}\n\n\n/** this matches your existing logic which is baked into MonitoringInstrumentation right now **/\npublic final class PrecreatedInterceptingActivityFactory {\n   final Activity premade;\n   boolean shouldIntercept(...) premade.getClass().getName().equals(className);\n\n   create(...) checkArgument(shouldIntercept(...)); return premade;\n}",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28039992_09d8cd2c",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "either make volatile b/c it is set on test thread, read on main thread or change your useActivityProvider(...) method to check if it is on the main thread (and if it is, do the set) or if it is not, post a future to the main thread to do the setting and block till future completes.",
+      "range": {
+        "startLine": 118,
+        "startChar": 11,
+        "endLine": 118,
+        "endChar": 12
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_06a79a60",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
@@ -173,6 +289,52 @@
         "startChar": 37,
         "endLine": 611,
         "endChar": 39
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28039992_49cec56b",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 611,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "I prefer a nullobject pattern instead of null checks... see suggestion in ActivityProvider about a DefaultInterceptingActivityFactory.\n\nif (interceptor.shouldIntercept(...)) { return interceptor.create(...)); } else { super.newActivity(...); }",
+      "range": {
+        "startLine": 611,
+        "startChar": 20,
+        "endLine": 611,
+        "endChar": 37
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28039992_69dbc1fe",
+        "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-29T19:40:21Z",
+      "side": 1,
+      "message": "BTW if we\u0027re letting user code run, log out before we call them, after we call them, catch their exceptions, log the exception out, and then propagate the exception.\n\nHighly likely the code the user gives us is untested, and if it has an issue (hanging, npe, etc) I\u0027d like to clearly point the finger to the issue in the logs",
+      "range": {
+        "startLine": 613,
+        "startChar": 0,
+        "endLine": 613,
+        "endChar": 16
       },
       "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
