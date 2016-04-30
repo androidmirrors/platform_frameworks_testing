@@ -329,6 +329,30 @@
     },
     {
       "key": {
+        "uuid": "88e3a549_e102065f",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-04-30T01:00:40Z",
+      "side": 1,
+      "message": "If I set the interceptor directly on instrumentation, I am only allowed to intercept the activity that I am testing not all the activities in the system. So in a way we are just giving control of providing Activity instance, decision of how to use it still lies within Instrumentation.",
+      "parentUuid": "28039992_da083584",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
