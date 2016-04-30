@@ -377,6 +377,30 @@
     },
     {
       "key": {
+        "uuid": "88e3a549_01356a35",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-04-30T01:34:31Z",
+      "side": 1,
+      "message": "I meant every Activity in the system under test i.e. Application.\n\nI will give it another shot. I will try to limit to a \"Default implementation with single activity\" only in ActivityTestRule, while directly using the interceptor on Instrumentation will allow to mock any activity.",
+      "parentUuid": "28039992_3a4e29b2",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
