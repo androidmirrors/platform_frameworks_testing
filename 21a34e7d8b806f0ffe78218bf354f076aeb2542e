@@ -281,6 +281,30 @@
     },
     {
       "key": {
+        "uuid": "88e3a549_c1038265",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-04-30T00:25:56Z",
+      "side": 1,
+      "message": "I tried going this route, but during implementation I realized that using something like InterceptingActivityFactory will give unwanted control of returning ANY activity instance to a single test which is a dangerous situation, as one wrongly written test can break the whole suite. For example, consider a situation where a test accidentally returns true from shouldIntercept() which will result in incorrect Activity instance being returned from MonitoringInstrumentation#newActivity() method and it can break all the tests that will run after the culprit test.\n\nThoughts?",
+      "parentUuid": "28039992_2cf277ab",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
