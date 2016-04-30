@@ -16,6 +16,7 @@
 
 package android.support.test.espresso.matcher;
 
+import android.support.annotation.NonNull;
 import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
 import static android.support.test.espresso.matcher.ViewMatchers.hasBackground;
 import static android.support.test.espresso.matcher.ViewMatchers.hasContentDescription;
@@ -34,6 +35,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isNotChecked;
 import static android.support.test.espresso.matcher.ViewMatchers.isRoot;
 import static android.support.test.espresso.matcher.ViewMatchers.isSelected;
 import static android.support.test.espresso.matcher.ViewMatchers.supportsInputMethods;
+import static android.support.test.espresso.matcher.ViewMatchers.thatFirstMatches;
 import static android.support.test.espresso.matcher.ViewMatchers.withChild;
 import static android.support.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static android.support.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
@@ -647,6 +649,17 @@ public class ViewMatchersTest extends InstrumentationTestCase {
     assertTrue(hasBackground(R.drawable.drawable_1).matches(viewWithBackground));
   }
 
+  public void testFirstMatchesByGivenMatcher() {
+    View firstViewWithId1 = createViewWithId(R.id.testId1);
+    View secondViewWithId1 = createViewWithId(R.id.testId1);
+
+    Matcher<View> id1FirstOccurrenceMatcher = thatFirstMatches(withId(R.id.testId1));
+
+    assertTrue(id1FirstOccurrenceMatcher.matches(firstViewWithId1));
+    assertFalse(id1FirstOccurrenceMatcher.matches(secondViewWithId1));
+    assertTrue(id1FirstOccurrenceMatcher.matches(firstViewWithId1));
+  }
+
   public void testWithInputType_ReturnsTrueIf_CorrectInput() {
     EditText editText = new EditText(context);
     editText.setInputType(InputType.TYPE_CLASS_NUMBER);
@@ -665,4 +678,10 @@ public class ViewMatchersTest extends InstrumentationTestCase {
     assertFalse(withInputType(UNRECOGNIZED_INPUT_TYPE).matches(editText));
   }
 
+  @NonNull
+  private View createViewWithId(int viewId) {
+    View view = new View(context);
+    view.setId(viewId);
+    return view;
+  }
 }

@@ -1171,4 +1171,38 @@ public final class ViewMatchers {
   public static Matcher<View> hasBackground(final int drawableId) {
     return new HasBackgroundMatcher(drawableId);
   }
+
+  /**
+   * Returns a matcher that matches <b>first<b> {@link android.view.View} matches by
+   * given matcher.
+   *
+   * If there are multiple views having same attributes present in view hierarchy, this matcher
+   * will only identify the first view from the view hierarchy.
+   *
+   * @param viewMatcher to match the view.
+   */
+  public static Matcher<View> thatFirstMatches(final Matcher<View> viewMatcher) {
+    return new TypeSafeMatcher<View>() {
+
+      private boolean matched;
+
+      private View matchedView;
+
+      @Override
+      protected boolean matchesSafely(View view) {
+        if (matched) return matchedView == view;
+        matched = viewMatcher.matches(view);
+        if (matched) {
+          matchedView = view;
+        }
+        return matched;
+      }
+
+      @Override
+      public void describeTo(Description description) {
+        description.appendText("that first matches ");
+        viewMatcher.describeTo(description);
+      }
+    };
+  }
 }
