@@ -24,6 +24,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.hasErrorText;
 import static android.support.test.espresso.matcher.ViewMatchers.hasImeAction;
 import static android.support.test.espresso.matcher.ViewMatchers.hasLinks;
 import static android.support.test.espresso.matcher.ViewMatchers.hasSibling;
+import static android.support.test.espresso.matcher.ViewMatchers.hasTextColor;
 import static android.support.test.espresso.matcher.ViewMatchers.isAssignableFrom;
 import static android.support.test.espresso.matcher.ViewMatchers.isChecked;
 import static android.support.test.espresso.matcher.ViewMatchers.isClickable;
@@ -49,6 +50,7 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 
+import android.os.Build;
 import android.support.test.espresso.matcher.ViewMatchers.Visibility;
 import android.support.test.testapp.test.R;
 import com.google.common.collect.Lists;
@@ -320,6 +322,23 @@ public class ViewMatchersTest extends InstrumentationTestCase {
     assertTrue(withText(is(testText)).matches(textView));
     assertFalse(withText(is("blah")).matches(textView));
     assertFalse(withText(is("")).matches(textView));
+  }
+
+  public void testHasTextColor() {
+    TextView textView = new TextView(context);
+    textView.setText("text");
+
+    int color;
+    if (Build.VERSION.SDK_INT <= 22) {
+      color = context.getResources().getColor(R.color.green);
+    } else {
+      color = context.getColor(R.color.green);
+    }
+
+    textView.setTextColor(color);
+
+    assertTrue(hasTextColor(R.color.green).matches(textView));
+    assertFalse(hasTextColor(R.color.red).matches(textView));
   }
 
   public void testHasDescendant() {
