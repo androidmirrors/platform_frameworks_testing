@@ -353,6 +353,30 @@
     },
     {
       "key": {
+        "uuid": "28039992_3a4e29b2",
+        "filename": "runner/src/main/java/android/support/test/internal/util/ActivityProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-04-30T01:10:41Z",
+      "side": 1,
+      "message": "The instrumentation only sees activities in your Application - not every activity in the system.\n\nYou can (if you choose) write tests which cross activities in your app. \n\nI am fine with making an easy/default way to create an interceptor which only creates 1 type of activity, but I don\u0027t think the overall mechanism should artificially limit you from making an interceptor that is general to any activity.",
+      "parentUuid": "88e3a549_e102065f",
+      "range": {
+        "startLine": 8,
+        "startChar": 17,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "21a34e7d8b806f0ffe78218bf354f076aeb2542e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "28039992_09d8cd2c",
         "filename": "runner/src/main/java/android/support/test/runner/MonitoringInstrumentation.java",
         "patchSetId": 1
