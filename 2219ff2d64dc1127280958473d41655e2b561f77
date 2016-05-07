@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "122528a9_7310d899",
+        "filename": "runner/src/main/java/android/support/test/internal/util/InterceptingActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-07T03:29:28Z",
+      "side": 1,
+      "message": "should not be in \"internal\" it\u0027s fine for peopel to use this.",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 37
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "122528a9_934344a1",
+        "filename": "runner/src/main/java/android/support/test/internal/util/InterceptingActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-07T03:29:28Z",
+      "side": 1,
+      "message": "needs per-method-docs",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 4
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "122528a9_5315dc87",
+        "filename": "runner/src/main/java/android/support/test/internal/util/SingleActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-07T03:29:28Z",
+      "side": 1,
+      "message": "should not be in \"internal\" it\u0027s fine for people to use this class",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 37
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
