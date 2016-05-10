@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "52bec0e3_77227046",
+        "filename": "runner/src/main/java/android/support/test/internal/util/InterceptingActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-05-10T02:07:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "122528a9_7310d899",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 37
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "122528a9_934344a1",
         "filename": "runner/src/main/java/android/support/test/internal/util/InterceptingActivityFactory.java",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "52bec0e3_571f6cf6",
+        "filename": "runner/src/main/java/android/support/test/internal/util/InterceptingActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-05-10T02:07:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "122528a9_934344a1",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 4
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "122528a9_5315dc87",
         "filename": "runner/src/main/java/android/support/test/internal/util/SingleActivityFactory.java",
         "patchSetId": 4
@@ -59,6 +107,30 @@
       "writtenOn": "2016-05-07T03:29:28Z",
       "side": 1,
       "message": "should not be in \"internal\" it\u0027s fine for people to use this class",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 37
+      },
+      "revId": "2219ff2d64dc1127280958473d41655e2b561f77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52bec0e3_371cf8ff",
+        "filename": "runner/src/main/java/android/support/test/internal/util/SingleActivityFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-05-10T02:07:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "122528a9_5315dc87",
       "range": {
         "startLine": 17,
         "startChar": 29,
