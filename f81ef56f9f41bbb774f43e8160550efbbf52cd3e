@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d26d50b5_b314f88d",
+        "filename": "runner/src/androidTest/java/android/support/test/runner/MonitoringInstrumentationTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-11T20:11:44Z",
+      "side": 1,
+      "message": "super nit: mInstrumentation since this is Android Source...",
+      "range": {
+        "startLine": 41,
+        "startChar": 38,
+        "endLine": 41,
+        "endChar": 53
+      },
+      "revId": "f81ef56f9f41bbb774f43e8160550efbbf52cd3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d26d50b5_3353885b",
+        "filename": "runner/src/main/java/android/support/test/runner/intercepting/SingleActivityFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-11T20:11:44Z",
+      "side": 1,
+      "message": "final",
+      "range": {
+        "startLine": 30,
+        "startChar": 12,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "f81ef56f9f41bbb774f43e8160550efbbf52cd3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d26d50b5_5350044c",
+        "filename": "runner/src/main/java/android/support/test/runner/intercepting/SingleActivityFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-11T20:11:44Z",
+      "side": 1,
+      "message": "mActivityClassToIntercept \u003d checkNotNull(activityClassToIntercept);",
+      "range": {
+        "startLine": 34,
+        "startChar": 36,
+        "endLine": 34,
+        "endChar": 60
+      },
+      "revId": "f81ef56f9f41bbb774f43e8160550efbbf52cd3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
