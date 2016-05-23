@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bc47d366_633362b1",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-23T16:25:53Z",
+      "side": 1,
+      "message": "This is still using support v4. This tests only works because of the way we run the core-tests. Once that changes this test will break.",
+      "range": {
+        "startLine": 327,
+        "startChar": 14,
+        "endLine": 327,
+        "endChar": 30
+      },
+      "revId": "7dee68255fccee16f8ae8bf7e77376475840e308",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc47d366_83e77e4b",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1181,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-23T16:25:53Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 1181,
+        "startChar": 29,
+        "endLine": 1181,
+        "endChar": 36
+      },
+      "revId": "7dee68255fccee16f8ae8bf7e77376475840e308",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
