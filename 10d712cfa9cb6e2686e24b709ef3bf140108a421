@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "9c0f6fb1_13f236de",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/EspressoEdgeCaseTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-25T19:16:44Z",
+      "side": 1,
+      "message": "tecovery?",
+      "range": {
+        "startLine": 85,
+        "startChar": 14,
+        "endLine": 85,
+        "endChar": 70
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9c0f6fb1_d305beb5",
         "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ScrollToActionIntegrationTest.java",
         "patchSetId": 1
@@ -59,6 +82,52 @@
       "writtenOn": "2016-05-25T19:08:07Z",
       "side": 1,
       "message": "@Small",
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c0f6fb1_938aa62b",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/CursorMatchersTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-25T19:16:44Z",
+      "side": 1,
+      "message": "expectedexception rule?",
+      "range": {
+        "startLine": 327,
+        "startChar": 8,
+        "endLine": 327,
+        "endChar": 10
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c0f6fb1_de8f0535",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1018443
+      },
+      "writtenOn": "2016-05-25T19:16:44Z",
+      "side": 1,
+      "message": "most classes have static imports at the top, can you make this file consistent?",
+      "range": {
+        "startLine": 58,
+        "startChar": 59,
+        "endLine": 58,
+        "endChar": 77
+      },
       "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
