@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c0f6fb1_d305beb5",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ScrollToActionIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-25T19:08:07Z",
+      "side": 1,
+      "message": "@RunWith(AJ4.class)",
+      "range": {
+        "startLine": 39,
+        "startChar": 13,
+        "endLine": 39,
+        "endChar": 42
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c0f6fb1_73f5f2d6",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/assertion/PositionAssertionsTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-25T19:08:07Z",
+      "side": 1,
+      "message": "Add @Large",
+      "range": {
+        "startLine": 47,
+        "startChar": 13,
+        "endLine": 47,
+        "endChar": 35
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c0f6fb1_13fc76c0",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/assertion/PositionAssertionsUnitTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-05-25T19:08:07Z",
+      "side": 1,
+      "message": "@Small",
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
