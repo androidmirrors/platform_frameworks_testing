@@ -16,6 +16,14 @@
 
 package android.support.test.espresso.action;
 
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.testapp.R;
+import android.support.test.testapp.ScrollActivity;
+import android.test.suitebuilder.annotation.LargeTest;
+
+import org.junit.Rule;
+import org.junit.Test;
+
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.scrollTo;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -24,31 +32,17 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import android.support.test.testapp.R;
-import android.support.test.testapp.ScrollActivity;
-
-import android.test.ActivityInstrumentationTestCase2;
-import android.test.suitebuilder.annotation.LargeTest;
-
 /**
  * Tests for ScrollToAction.
  */
 @LargeTest
-public class ScrollToActionIntegrationTest extends ActivityInstrumentationTestCase2<ScrollActivity>
-{
-  @SuppressWarnings("deprecation")
-  public ScrollToActionIntegrationTest() {
-    // Keep froyo happy.
-    super("android.support.test.testapp", ScrollActivity.class);
-  }
+public class ScrollToActionIntegrationTest {
 
-  @Override
-  protected void setUp() throws Exception {
-    super.setUp();
-    getActivity();
-  }
+  @Rule
+  public ActivityTestRule<ScrollActivity> rule = new ActivityTestRule<>(ScrollActivity.class);
 
-  public void testScrollDown() {
+  @Test
+  public void scrollDown() {
     onView(withId(is(R.id.bottom_left)))
       .check(matches(not(isDisplayed())))
       .perform(scrollTo())
@@ -56,7 +50,8 @@ public class ScrollToActionIntegrationTest extends ActivityInstrumentationTestCa
       .perform(scrollTo()); // Should be a noop.
   }
 
-  public void testScrollVerticalAndHorizontal() {
+  @Test
+  public void scrollVerticalAndHorizontal() {
     onView(withId(is(R.id.bottom_right)))
       .check(matches(not(isDisplayed())))
       .perform(scrollTo())
@@ -67,7 +62,8 @@ public class ScrollToActionIntegrationTest extends ActivityInstrumentationTestCa
       .check(matches(isDisplayed()));
   }
 
-  public void testScrollWithinScroll() {
+  @Test
+  public void scrollWithinScroll() {
     onView(withId(is(R.id.double_scroll)))
       .check(matches(not(isDisplayed())))
       .perform(scrollTo())

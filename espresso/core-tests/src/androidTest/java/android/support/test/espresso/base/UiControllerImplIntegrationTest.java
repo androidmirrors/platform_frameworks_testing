@@ -16,18 +16,18 @@
 
 package android.support.test.espresso.base;
 
-import android.support.test.espresso.InjectEventSecurityException;
-import android.support.test.espresso.UiController;
-import android.support.test.espresso.util.HumanReadables;
-import android.support.test.testapp.R;
-import android.support.test.testapp.SendActivity;
-
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.os.Build;
 import android.os.Looper;
 import android.os.SystemClock;
-import android.test.ActivityInstrumentationTestCase2;
+import android.support.test.espresso.InjectEventSecurityException;
+import android.support.test.espresso.UiController;
+import android.support.test.espresso.util.HumanReadables;
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.support.test.testapp.R;
+import android.support.test.testapp.SendActivity;
 import android.test.suitebuilder.annotation.LargeTest;
 import android.util.Log;
 import android.view.KeyCharacterMap;
@@ -35,15 +35,38 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import static android.support.test.InstrumentationRegistry.getInstrumentation;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 /**
  * Test for {@link UiControllerImpl}.
  */
-public class UiControllerImplIntegrationTest
-    extends ActivityInstrumentationTestCase2<SendActivity> {
+@RunWith(AndroidJUnit4.class)
+public class UiControllerImplIntegrationTest {
+
+  @Rule
+  public ActivityTestRule<SendActivity> rule = new ActivityTestRule<SendActivity>(
+      SendActivity.class, true, false) {
+    @Override
+    public SendActivity getActivity() {
+      SendActivity a = launchActivity(null);
+      while (!a.hasWindowFocus()) {
+        getInstrumentation().waitForIdleSync();
+      }
+      return a;
+    }
+  };
+
   private Activity sendActivity;
   private final AtomicBoolean injectEventWorked = new AtomicBoolean(false);
   private final AtomicBoolean injectEventThrewSecurityException = new AtomicBoolean(false);
@@ -51,15 +74,8 @@ public class UiControllerImplIntegrationTest
   private final CountDownLatch latch = new CountDownLatch(1);
   private UiController uiController;
 
-  @SuppressWarnings("deprecation")
-  public UiControllerImplIntegrationTest() {
-    // Supporting froyo.
-    super("android.support.test.testapp", SendActivity.class);
-  }
-
-  @Override
+  @Before
   public void setUp() throws Exception {
-    super.setUp();
     EventInjector injector = null;
     if (Build.VERSION.SDK_INT > 15) {
       InputManagerEventInjectionStrategy strat = new InputManagerEventInjectionStrategy();
@@ -85,20 +101,10 @@ public class UiControllerImplIntegrationTest
   }
 
 
-  @Override
-  public SendActivity getActivity() {
-    SendActivity a = super.getActivity();
-
-    while (!a.hasWindowFocus()) {
-      getInstrumentation().waitForIdleSync();
-    }
-
-    return a;
-  }
-
   @LargeTest
-  public void testInjectKeyEvent() throws InterruptedException {
-    sendActivity = getActivity();
+  @Test
+  public void injectKeyEvent() throws InterruptedException {
+    sendActivity = rule.getActivity();
     getInstrumentation().waitForIdleSync();
 
     getInstrumentation().runOnMainSync(new Runnable() {
@@ -121,8 +127,9 @@ public class UiControllerImplIntegrationTest
   }
 
   @LargeTest
+  @Test
   public void testInjectString() throws InterruptedException {
-    sendActivity = getActivity();
+    sendActivity = rule.getActivity();
     getInstrumentation().waitForIdleSync();
     final AtomicBoolean requestFocusSucceded = new AtomicBoolean(false);
 
@@ -159,8 +166,9 @@ public class UiControllerImplIntegrationTest
   }
 
   @LargeTest
-  public void testInjectLargeString() throws InterruptedException {
-    sendActivity = getActivity();
+  @Test
+  public void injectLargeString() throws InterruptedException {
+    sendActivity = rule.getActivity();
     getInstrumentation().waitForIdleSync();
     final AtomicBoolean requestFocusSucceded = new AtomicBoolean(false);
 
@@ -197,8 +205,9 @@ public class UiControllerImplIntegrationTest
   }
 
   @LargeTest
+  @Test
   public void testInjectEmptyString() throws InterruptedException {
-    sendActivity = getActivity();
+    sendActivity = rule.getActivity();
     getInstrumentation().waitForIdleSync();
     final AtomicBoolean requestFocusSucceded = new AtomicBoolean(false);
 
@@ -232,7 +241,8 @@ public class UiControllerImplIntegrationTest
   }
 
   @LargeTest
-  public void testInjectStringSecurityException() throws InterruptedException {
+  @Test
+  public void injectStringSecurityException() throws InterruptedException {
     getInstrumentation().runOnMainSync(new Runnable() {
       @Override
       public void run() {
@@ -251,8 +261,9 @@ public class UiControllerImplIntegrationTest
   }
 
   @LargeTest
-  public void testInjectMotionEvent() throws InterruptedException {
-    sendActivity = getActivity();
+  @Test
+  public void injectMotionEvent() throws InterruptedException {
+    sendActivity = rule.getActivity();
     final int xy[] = getCoordinatesInMiddleOfSendButton(sendActivity, getInstrumentation());
 
     getInstrumentation().runOnMainSync(new Runnable() {
