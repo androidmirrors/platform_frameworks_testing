@@ -131,6 +131,30 @@
       "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc422bdd_2047e441",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/matcher/ViewMatchersTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-05-26T04:07:57Z",
+      "side": 1,
+      "message": "I see static imports being at the bottom in most of the files(e.g. ViewFinderImplTest, UiControllerImplTest, UiControllerImplIntegrationTest etc). In fact in this particular change I(actually IDE) just added it in the place where other static imports were placed. If I move this one at the top I have to move it in many other files as well for consistency.\n\nDo you think this change needs to be done at this moment?",
+      "parentUuid": "9c0f6fb1_de8f0535",
+      "range": {
+        "startLine": 58,
+        "startChar": 59,
+        "endLine": 58,
+        "endChar": 77
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
