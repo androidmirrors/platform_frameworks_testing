@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "5cd1778b_c8e70fee",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ScrollToActionIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-05-28T06:58:10Z",
+      "side": 1,
+      "message": "Already done in Patch Set 2",
+      "parentUuid": "bc11930b_42f48c93",
+      "range": {
+        "startLine": 39,
+        "startChar": 13,
+        "endLine": 39,
+        "endChar": 42
+      },
+      "revId": "10d712cfa9cb6e2686e24b709ef3bf140108a421",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9c0f6fb1_73f5f2d6",
         "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/assertion/PositionAssertionsTest.java",
         "patchSetId": 1
