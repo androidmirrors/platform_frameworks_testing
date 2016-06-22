@@ -16,20 +16,18 @@
 
 package android.support.test.espresso.assertion;
 
-import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
-import static android.support.test.espresso.util.TreeIterables.breadthFirstViewTraversal;
-import static com.google.common.base.Preconditions.checkNotNull;
-import static org.hamcrest.Matchers.is;
-
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.support.test.espresso.NoMatchingViewException;
 import android.support.test.espresso.ViewAssertion;
+import android.support.test.espresso.util.BitmapUtil;
 import android.support.test.espresso.util.HumanReadables;
+import android.util.Log;
+import android.view.View;
+
 import com.google.common.base.Preconditions;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
-
-import android.util.Log;
-import android.view.View;
 
 import junit.framework.AssertionFailedError;
 
@@ -39,6 +37,12 @@ import org.hamcrest.StringDescription;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
+import static android.support.test.espresso.util.TreeIterables.breadthFirstViewTraversal;
+import static com.google.common.base.Preconditions.checkNotNull;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertTrue;
 
 /**
  * A collection of common {@link ViewAssertion}s.
@@ -134,6 +138,29 @@ public final class ViewAssertions {
               "****DOES NOT MATCH****");
           throw new AssertionFailedError(errorMessage);
         }
+      }
+    };
+  }
+
+  /**
+   * Returns a generic {@link ViewAssertion} that asserts that a view looks visually same as given
+   * bitmap. This can be used to verify the styling of a view as well, in addition to its contents.
+   *
+   * @param expectedBitmap Represents the expected visual appearance of view
+   * @return ViewAssertion that matches the given view with expectedBitmap
+   */
+  public static ViewAssertion matchesVisually(final Bitmap expectedBitmap) {
+    return new ViewAssertion() {
+      @Override
+      public void check(View view, NoMatchingViewException noViewFoundException) {
+        if(noViewFoundException != null) {
+          throw noViewFoundException;
+        }
+        Bitmap viewBitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(),
+            expectedBitmap.getConfig());
+        view.draw(new Canvas(viewBitmap));
+        assertTrue("View matches the given bitmap " + HumanReadables.describe(view),
+            BitmapUtil.compareBitmaps(viewBitmap, expectedBitmap));
       }
     };
   }
