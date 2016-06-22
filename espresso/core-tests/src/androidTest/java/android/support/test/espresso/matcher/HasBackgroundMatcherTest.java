@@ -65,43 +65,4 @@ public class HasBackgroundMatcherTest {
 
     assertFalse(new HasBackgroundMatcher(drawable1).matches(view));
   }
-
-  @Test
-  public void compareSameBitmapImage() {
-    Bitmap bitmap = null;
-    try {
-      bitmap = BitmapFactory.decodeResource(
-        context.getResources(), android.R.drawable.alert_dark_frame);
-      assertTrue(HasBackgroundMatcher.compareBitmaps(bitmap, bitmap));
-    } finally {
-      recycle(bitmap);
-      bitmap = null;
-    }
-  }
-
-  @Test
-  public void compareDifferentBitmapImages() {
-    Bitmap bitmap1 = null;
-    Bitmap bitmap2 = null;
-
-    try {
-      bitmap1 = BitmapFactory.decodeResource(
-        context.getResources(), android.R.drawable.alert_dark_frame);
-      bitmap2 = BitmapFactory.decodeResource(
-        context.getResources(), android.R.drawable.alert_light_frame);
-
-      assertFalse(HasBackgroundMatcher.compareBitmaps(bitmap1, bitmap2));
-    } finally {
-      recycle(bitmap1);
-      recycle(bitmap2);
-      bitmap1 = null;
-      bitmap2 = null;
-    }
-  }
-
-  private void recycle(Bitmap bitmap) {
-    if (bitmap != null) {
-      bitmap.recycle();
-    }
-  }
 }
