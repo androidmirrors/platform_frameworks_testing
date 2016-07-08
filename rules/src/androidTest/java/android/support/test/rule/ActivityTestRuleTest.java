@@ -18,11 +18,12 @@ package android.support.test.rule;
 
 import android.app.Activity;
 import android.app.Instrumentation;
+import android.app.Instrumentation.ActivityResult;
 import android.content.Context;
 import android.content.Intent;
-import android.support.test.runner.intercepting.SingleActivityFactory;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.test.runner.MonitoringInstrumentation;
+import android.support.test.runner.intercepting.SingleActivityFactory;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import org.junit.After;
@@ -316,4 +317,50 @@ public class ActivityTestRuleTest {
         inOrder.verify(baseStatement).evaluate();
         inOrder.verify(instrumentation).useDefaultInterceptingActivityFactory();
     }
+
+    public static class SuccessfulGetActivityResultTest {
+        @Rule
+        public ActivityTestRule<Activity> mRule = new ActivityTestRule<>(Activity.class);
+        @Test
+        public void shouldReturnActivityResult() {
+            Intent startIntent = new Intent(getTargetContext(), Activity.class);
+            Activity activity = mRule.launchActivity(startIntent);
+            activity.setResult(Activity.RESULT_OK,
+                    new Intent(Intent.ACTION_VIEW));
+            activity.finish();
+
+            ActivityResult activityResult = mRule.getActivityResult();
+            assertNotNull(activityResult);
+            assertEquals(Activity.RESULT_OK, activityResult.getResultCode());
+            assertEquals(Intent.ACTION_VIEW, activityResult.getResultData().getAction());
+        }
+    }
+
+    @Test
+    public void successfulGetActivityResult() {
+        Result result = runClasses(SuccessfulGetActivityResultTest.class);
+        assertEquals(0, result.getFailureCount());
+    }
+
+    public static class FailureGetActivityResultTest {
+        @Rule
+        public ActivityTestRule<Activity> mRule = new ActivityTestRule<>(Activity.class);
+        @Test
+        public void shouldfailWhenNotFinishing() {
+            Intent startIntent = new Intent(getTargetContext(), Activity.class);
+            Activity activity = mRule.launchActivity(startIntent);
+            activity.setResult(Activity.RESULT_OK,
+                    new Intent(Intent.ACTION_VIEW));
+            mRule.getActivityResult();
+        }
+    }
+
+    @Test
+    public void failureGetActivityResult() {
+        Result result = runClasses(FailureGetActivityResultTest.class);
+        assertEquals(1, result.getFailureCount());
+        assertEquals(IllegalStateException.class,
+                result.getFailures().get(0).getException().getClass());
+    }
+
 }
