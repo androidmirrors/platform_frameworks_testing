@@ -16,9 +16,11 @@
 
 package android.support.test.rule;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.annotation.Beta;
@@ -29,7 +31,10 @@ import android.util.Log;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
+import java.lang.reflect.Field;
+
 import static android.support.test.internal.util.Checks.checkNotNull;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * This rule provides functional testing of a single activity. The activity under test will be
@@ -256,6 +261,31 @@ public class ActivityTestRule<T extends Activity> extends UiThreadTestRule {
         if (mActivity != null) {
             mActivity.finish();
             mActivity = null;
+        }
+    }
+
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+    public Instrumentation.ActivityResult getActivityResult() {
+        T activity = getActivity();
+        assertThat("Activity did not finish, getActivityResult must not called before the activity finished " +
+                "(activity destroyed: " + activity.isDestroyed() + ")", activity.isFinishing());
+
+        try {
+            Field resultCodeField = Activity.class.getDeclaredField("mResultCode");
+            resultCodeField.setAccessible(true);
+
+            Field resultDataField = Activity.class.getDeclaredField("mResultData");
+            resultDataField.setAccessible(true);
+
+            return new Instrumentation.ActivityResult((int) resultCodeField.get(activity),
+                    (Intent) resultDataField.get(activity));
+
+        } catch (NoSuchFieldException e) {
+            throw new RuntimeException("Looks like the Android Activity class has changed it's" +
+                    "private fields for mResultCode or mResultData. Time to update the reflection code.", e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
