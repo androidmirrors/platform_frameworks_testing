@@ -19,6 +19,29 @@
     },
     {
       "key": {
+        "uuid": "1ab8eca5_248b0be1",
+        "filename": "espresso/contrib-tests/src/androidTest/java/android/support/test/espresso/contrib/ActivityResultMatcherTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 10
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_e43e5317",
         "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/ActivityResultMatchers.java",
         "patchSetId": 4
@@ -30,6 +53,75 @@
       "writtenOn": "2016-07-11T19:44:19Z",
       "side": 1,
       "message": "copy right + line limit below",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_24b46b91",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/ActivityResultMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "nit: we usually use // no instance",
+      "range": {
+        "startLine": 17,
+        "startChar": 11,
+        "endLine": 17,
+        "endChar": 31
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_44bddf76",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/ActivityResultMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "use a static import here",
+      "range": {
+        "startLine": 25,
+        "startChar": 67,
+        "endLine": 25,
+        "endChar": 82
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_64c263f8",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/ActivityResultMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 49,
+        "startChar": 67,
+        "endLine": 49,
+        "endChar": 82
+      },
       "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -190,6 +282,156 @@
     },
     {
       "key": {
+        "uuid": "1ab8eca5_a4993bea",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "It\u0027ll work because it\u0027s an implicit dep inherited from runner. Might be safer to explicitly declare it",
+      "parentUuid": "1ab8eca5_899c5082",
+      "range": {
+        "startLine": 37,
+        "startChar": 18,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a142433_d6fbf545",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "Activity",
+      "range": {
+        "startLine": 269,
+        "startChar": 47,
+        "endLine": 269,
+        "endChar": 56
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba052000_929c6182",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 269,
+        "startChar": 70,
+        "endLine": 269,
+        "endChar": 78
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_847d1754",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "@code",
+      "range": {
+        "startLine": 270,
+        "startChar": 52,
+        "endLine": 270,
+        "endChar": 68
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_e4ae53f9",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "@code",
+      "range": {
+        "startLine": 271,
+        "startChar": 18,
+        "endLine": 271,
+        "endChar": 40
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a142433_76a4296f",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "\u003cp\u003e",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba660035_ae234b4b",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "please mention what is returned",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_c9b9e827",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
@@ -201,6 +443,30 @@
       "writtenOn": "2016-07-11T19:44:19Z",
       "side": 1,
       "message": "Espresso support api \u003e\u003d 8  and this annotation was only introduced in 16. Same concern for the actual API you\u0027re suppressing the lint warning for",
+      "range": {
+        "startLine": 277,
+        "startChar": 5,
+        "endLine": 277,
+        "endChar": 14
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_a41e1b58",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "I\u0027m also curios why this is a 17+ API. Are the fields we reflect on only available in 17+? Can we have 2 different impls that work on all API lvls \u003e 8?",
+      "parentUuid": "1ab8eca5_c9b9e827",
       "range": {
         "startLine": 277,
         "startChar": 5,
@@ -259,6 +525,29 @@
     },
     {
       "key": {
+        "uuid": "1ab8eca5_e423b398",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "I would want to avoid a hamcrest dep in rules/runner if possible. We should just switche this",
+      "range": {
+        "startLine": 280,
+        "startChar": 8,
+        "endLine": 280,
+        "endChar": 18
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_49ebb8e5",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
@@ -298,6 +587,29 @@
         "startChar": 69,
         "endLine": 286,
         "endChar": 80
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a2a64c0_8966393b",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:20:30Z",
+      "side": 1,
+      "message": "its",
+      "range": {
+        "startLine": 293,
+        "startChar": 90,
+        "endLine": 293,
+        "endChar": 94
       },
       "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
