@@ -306,6 +306,30 @@
     },
     {
       "key": {
+        "uuid": "5a2a64c0_0966c9a8",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T20:46:34Z",
+      "side": 1,
+      "message": "Here are the runner deps:\n\n    compile \u0027junit:junit:4.12\u0027\n    compile \u0027com.android.support:support-annotations:\u0027+supportLibVersion\n    androidTestCompile \u0027org.hamcrest:hamcrest-library:1.3\u0027\n    androidTestCompile \u0027org.hamcrest:hamcrest-integration:1.3\u0027\n    androidTestCompile \u0027com.google.dexmaker:dexmaker-mockito:1.2\u0027",
+      "parentUuid": "1ab8eca5_a4993bea",
+      "range": {
+        "startLine": 37,
+        "startChar": 18,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a142433_d6fbf545",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
