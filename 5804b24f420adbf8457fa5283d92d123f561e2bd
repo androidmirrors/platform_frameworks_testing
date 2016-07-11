@@ -330,6 +330,30 @@
     },
     {
       "key": {
+        "uuid": "5a2a64c0_6914a5f1",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-11T20:50:36Z",
+      "side": 1,
+      "message": "Yeah but JUnit 4.12 depends on hamcrest-core... https://mvnrepository.com/artifact/junit/junit/4.12",
+      "parentUuid": "5a2a64c0_0966c9a8",
+      "range": {
+        "startLine": 37,
+        "startChar": 18,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a142433_d6fbf545",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
