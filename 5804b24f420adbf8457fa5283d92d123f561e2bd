@@ -1,0 +1,353 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ab8eca5_a47b7bd4",
+        "filename": "espresso/contrib-tests/src/androidTest/java/android/support/test/espresso/contrib/ActivityResultMatcherTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "copyright + line limit below",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_e43e5317",
+        "filename": "espresso/contrib/src/main/java/android/support/test/espresso/contrib/ActivityResultMatchers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "copy right + line limit below",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_c4b6afe9",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/ActivityResultTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "copyright",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_448abf2f",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/ActivityResultTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "Please add size annotation",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_04bda7c5",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/ActivityResultTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "line limit",
+      "range": {
+        "startLine": 24,
+        "startChar": 97,
+        "endLine": 24,
+        "endChar": 102
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_e4b3b3f6",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/ActivityResultTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "line limit",
+      "range": {
+        "startLine": 30,
+        "startChar": 90,
+        "endLine": 30,
+        "endChar": 102
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_0438472c",
+        "filename": "espresso/sample/src/main/java/android/support/test/testapp/PickActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "copyright",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_a4293be8",
+        "filename": "espresso/sample/src/main/res/layout/pick_activity.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "copyright",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_64a82389",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "Can you add some tests to:\n//frameworks/testing/rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_899c5082",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "does this work? I thought we don\u0027t have Hamcrest dep outside of the test source set",
+      "range": {
+        "startLine": 37,
+        "startChar": 18,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_c9b9e827",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "Espresso support api \u003e\u003d 8  and this annotation was only introduced in 16. Same concern for the actual API you\u0027re suppressing the lint warning for",
+      "range": {
+        "startLine": 277,
+        "startChar": 5,
+        "endLine": 277,
+        "endChar": 14
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_a95594b2",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "you can use mActivity here",
+      "range": {
+        "startLine": 279,
+        "startChar": 8,
+        "endLine": 279,
+        "endChar": 35
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_29420400",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "nit: line limit exceeded",
+      "range": {
+        "startLine": 280,
+        "startChar": 99,
+        "endLine": 280,
+        "endChar": 107
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_49ebb8e5",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "extract to a constant",
+      "range": {
+        "startLine": 283,
+        "startChar": 69,
+        "endLine": 283,
+        "endChar": 80
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_e9ef0cef",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "extract to a constant",
+      "range": {
+        "startLine": 286,
+        "startChar": 69,
+        "endLine": 286,
+        "endChar": 80
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_09edc0f6",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 294,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "line character limit",
+      "range": {
+        "startLine": 294,
+        "startChar": 98,
+        "endLine": 294,
+        "endChar": 102
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab8eca5_c9f6c8c8",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-11T19:44:19Z",
+      "side": 1,
+      "message": "extract to specific exception and add messages to ease with debugging",
+      "range": {
+        "startLine": 295,
+        "startChar": 17,
+        "endLine": 295,
+        "endChar": 26
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
