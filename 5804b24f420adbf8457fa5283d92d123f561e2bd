@@ -259,6 +259,24 @@
     },
     {
       "key": {
+        "uuid": "5a9d046f_f7e5f8d6",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-14T21:17:17Z",
+      "side": 1,
+      "message": "I don\u0027t know how to launch an activity here.",
+      "parentUuid": "1ab8eca5_64a82389",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_899c5082",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
@@ -584,6 +602,30 @@
       "writtenOn": "2016-07-11T20:20:30Z",
       "side": 1,
       "message": "I would want to avoid a hamcrest dep in rules/runner if possible. We should just switche this",
+      "range": {
+        "startLine": 280,
+        "startChar": 8,
+        "endLine": 280,
+        "endChar": 18
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d046f_57f5e487",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-14T21:17:17Z",
+      "side": 1,
+      "message": "What about checkState(activity.isFinishing()) instead?",
+      "parentUuid": "1ab8eca5_e423b398",
       "range": {
         "startLine": 280,
         "startChar": 8,
