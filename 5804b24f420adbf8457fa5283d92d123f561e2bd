@@ -638,6 +638,30 @@
     },
     {
       "key": {
+        "uuid": "3a03f0c0_7e85e921",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1040223
+      },
+      "writtenOn": "2016-07-14T23:56:08Z",
+      "side": 1,
+      "message": "Sure that would work. But why not just use do if(isFInishing) { throw new AssertionError(\"bla\");} \n\nIn case you decide to use checkState please use the one from our Checks class.",
+      "parentUuid": "5a9d046f_57f5e487",
+      "range": {
+        "startLine": 280,
+        "startChar": 8,
+        "endLine": 280,
+        "endChar": 18
+      },
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_49ebb8e5",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
