@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a03f0c0_339effd0",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1176,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 1176,
+        "startChar": 74,
+        "endLine": 1176,
+        "endChar": 81
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_33771f73",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1179,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "with the same",
+      "range": {
+        "startLine": 1179,
+        "startChar": 33,
+        "endLine": 1179,
+        "endChar": 39
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_d36fc3a9",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1184,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "\"thatMatchesFirst\" might be more explanatory?",
+      "range": {
+        "startLine": 1184,
+        "startChar": 30,
+        "endLine": 1184,
+        "endChar": 46
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_335b9fe2",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1187,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "isAlreadyMatched or isFirstViewFound, open for suggestions...",
+      "range": {
+        "startLine": 1187,
+        "startChar": 22,
+        "endLine": 1187,
+        "endChar": 29
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_b3596f16",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1193,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "add { }",
+      "range": {
+        "startLine": 1193,
+        "startChar": 20,
+        "endLine": 1193,
+        "endChar": 21
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_735fd7fa",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/matcher/ViewMatchers.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1203,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-15T23:48:52Z",
+      "side": 1,
+      "message": "matches first",
+      "range": {
+        "startLine": 1203,
+        "startChar": 37,
+        "endLine": 1203,
+        "endChar": 50
+      },
+      "revId": "643e3b6f927f17f0dff9993e34ce2917cccd71bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
