@@ -547,6 +547,24 @@
     },
     {
       "key": {
+        "uuid": "eafc272d_61bc7084",
+        "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-16T14:08:07Z",
+      "side": 1,
+      "message": "I ended up adding a manifest file to androidTest src. Is this acceptable?",
+      "parentUuid": "ba20c083_e4321a50",
+      "revId": "5804b24f420adbf8457fa5283d92d123f561e2bd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ab8eca5_899c5082",
         "filename": "rules/src/main/java/android/support/test/rule/ActivityTestRule.java",
         "patchSetId": 4
