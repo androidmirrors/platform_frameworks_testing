@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a03f0c0_2ea4d86d",
+        "filename": "espresso/contrib-tests/src/androidTest/java/android/support/test/espresso/contrib/ActivityResultMatcherTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-16T00:22:25Z",
+      "side": 1,
+      "message": "char limit everywhere",
+      "range": {
+        "startLine": 55,
+        "startChar": 94,
+        "endLine": 55,
+        "endChar": 100
+      },
+      "revId": "e7b78635e41c26735fee42d2bf8dd51336217b73",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
