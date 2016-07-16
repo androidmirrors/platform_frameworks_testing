@@ -22,6 +22,30 @@
       "revId": "e7b78635e41c26735fee42d2bf8dd51336217b73",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea2507a1_76a670ac",
+        "filename": "espresso/contrib-tests/src/androidTest/java/android/support/test/espresso/contrib/ActivityResultMatcherTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-16T14:08:07Z",
+      "side": 1,
+      "message": "Sorry about that. Done",
+      "parentUuid": "3a03f0c0_2ea4d86d",
+      "range": {
+        "startLine": 55,
+        "startChar": 94,
+        "endLine": 55,
+        "endChar": 100
+      },
+      "revId": "e7b78635e41c26735fee42d2bf8dd51336217b73",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
