@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a03f0c0_53c9ecb8",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-18T20:31:17Z",
+      "side": 1,
+      "message": "just use ActivityFixture which is defined in this class and remove the manifest.",
+      "range": {
+        "startLine": 323,
+        "startChar": 73,
+        "endLine": 323,
+        "endChar": 81
+      },
+      "revId": "13fd0a558fa9a1ef13ecfbf654f4030cb3af1703",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a03f0c0_93c38499",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1052388
+      },
+      "writtenOn": "2016-07-18T20:31:17Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 347,
+        "startChar": 73,
+        "endLine": 347,
+        "endChar": 81
+      },
+      "revId": "13fd0a558fa9a1ef13ecfbf654f4030cb3af1703",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
