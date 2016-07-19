@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ca7e839c_358ed025",
+        "filename": "rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-19T06:50:35Z",
+      "side": 1,
+      "message": "Then I get the RuntimeException because the instrumentation can\u0027t find the activity.\n\nWhen using a mocked instrumentation I can\u0027t create the activity because I am not in the right thread. \n\nI didn\u0027t manage to find a solution other than adding an activity to the manifest.\n\n\n\nCaused by: java.lang.RuntimeException: Unable to resolve activity for: Intent { act\u003dandroid.intent.action.MAIN flg\u003d0x14000000 cmp\u003dandroid.support.test.rule.test/android.support.test.rule.ActivityTestRuleTest$ActivityFixture }\n07-19 08:47:32.719 30105-30123/android.support.test.rule.test W/System.err:     at android.app.Instrumentation.startActivitySync(Instrumentation.java:386)",
+      "parentUuid": "3a03f0c0_53c9ecb8",
+      "range": {
+        "startLine": 323,
+        "startChar": 73,
+        "endLine": 323,
+        "endChar": 81
+      },
+      "revId": "13fd0a558fa9a1ef13ecfbf654f4030cb3af1703",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a03f0c0_93c38499",
         "filename": "rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
         "patchSetId": 7
