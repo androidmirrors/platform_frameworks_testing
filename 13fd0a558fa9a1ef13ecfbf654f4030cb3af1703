@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6a1037cf_2a65bfb7",
+        "filename": "espresso/sample/src/androidTest/java/android/support/test/testapp/ActivityResultTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1112893
+      },
+      "writtenOn": "2016-07-21T16:24:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2a3d5fbd_e112a905",
+      "range": {
+        "startLine": 39,
+        "startChar": 1,
+        "endLine": 39,
+        "endChar": 10
+      },
+      "revId": "13fd0a558fa9a1ef13ecfbf654f4030cb3af1703",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a03f0c0_53c9ecb8",
         "filename": "rules/src/androidTest/java/android/support/test/rule/ActivityTestRuleTest.java",
         "patchSetId": 7
