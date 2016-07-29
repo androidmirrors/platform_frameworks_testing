@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2f2ad160_cba0c98f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-07-29T19:22:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a03f0c0_f3dbe758",
+      "range": {
+        "startLine": 9,
+        "startChar": 72,
+        "endLine": 9,
+        "endChar": 73
+      },
+      "revId": "750e015afb158bac80b70c5d4c15ac458878f59a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a03f0c0_93f70bc4",
         "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/assertion/VisualAssertionsIntegrationTest.java",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-07-16T00:04:35Z",
       "side": 1,
       "message": "nit: flip runWith and size annotation",
+      "range": {
+        "startLine": 46,
+        "startChar": 1,
+        "endLine": 46,
+        "endChar": 10
+      },
+      "revId": "750e015afb158bac80b70c5d4c15ac458878f59a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f2ad160_abab9570",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/assertion/VisualAssertionsIntegrationTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-07-29T19:22:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a03f0c0_93f70bc4",
       "range": {
         "startLine": 46,
         "startChar": 1,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "2f2ad160_8ba6d1a9",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/util/BitmapUtilTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-07-29T19:22:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a03f0c0_d39b4388",
+      "range": {
+        "startLine": 20,
+        "startChar": 1,
+        "endLine": 20,
+        "endChar": 11
+      },
+      "revId": "750e015afb158bac80b70c5d4c15ac458878f59a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a03f0c0_53d61327",
         "filename": "espresso/core/src/main/java/android/support/test/espresso/assertion/ViewAssertions.java",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2016-07-16T00:04:35Z",
       "side": 1,
       "message": "add spaces before and after",
+      "range": {
+        "startLine": 156,
+        "startChar": 31,
+        "endLine": 156,
+        "endChar": 33
+      },
+      "revId": "750e015afb158bac80b70c5d4c15ac458878f59a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f2ad160_4b9cd959",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/assertion/ViewAssertions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-07-29T19:22:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a03f0c0_53d61327",
       "range": {
         "startLine": 156,
         "startChar": 31,
@@ -128,6 +224,30 @@
       "writtenOn": "2016-07-16T00:04:35Z",
       "side": 1,
       "message": "maybe this config should be passed in as a parameter? since it matters how the expectedBitmap was created.",
+      "range": {
+        "startLine": 159,
+        "startChar": 97,
+        "endLine": 159,
+        "endChar": 106
+      },
+      "revId": "750e015afb158bac80b70c5d4c15ac458878f59a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f2ad160_6b999d68",
+        "filename": "espresso/core/src/main/java/android/support/test/espresso/assertion/ViewAssertions.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1102959
+      },
+      "writtenOn": "2016-07-29T19:22:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a03f0c0_8efc0440",
       "range": {
         "startLine": 159,
         "startChar": 97,
