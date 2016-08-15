@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "de764d83_358c502d",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ClickOnScaledViewIntegrationTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011713
+      },
+      "writtenOn": "2016-08-15T16:46:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de8d6db7_5d401b40",
+      "range": {
+        "startLine": 32,
+        "startChar": 13,
+        "endLine": 32,
+        "endChar": 45
+      },
+      "revId": "4ea49b3ecfcb61d1c856b666df6b9287d29344e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "de8d6db7_3d434f4f",
         "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ClickOnScaledViewIntegrationTest.java",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-08-15T16:35:29Z",
       "side": 1,
       "message": "100 chars",
+      "range": {
+        "startLine": 35,
+        "startChar": 87,
+        "endLine": 35,
+        "endChar": 118
+      },
+      "revId": "4ea49b3ecfcb61d1c856b666df6b9287d29344e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1e61c5bb_17bd94a8",
+        "filename": "espresso/core-tests/src/androidTest/java/android/support/test/espresso/action/ClickOnScaledViewIntegrationTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011713
+      },
+      "writtenOn": "2016-08-15T16:46:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de8d6db7_3d434f4f",
       "range": {
         "startLine": 35,
         "startChar": 87,
