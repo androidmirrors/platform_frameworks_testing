@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1afac331_bd9bbf5c",
+        "filename": "rules/src/androidTest/java/android/support/test/internal/setting/TwelveHourFormatSetting.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1103932
+      },
+      "writtenOn": "2016-12-11T15:04:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1af00ab_e4837025",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "5a687649f1d8e679df8b05e75dd80612c7017b48",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e1af00ab_e428104f",
         "filename": "rules/src/main/java/android/support/test/annotation/WithSetting.java",
         "patchSetId": 1
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "daff4b21_9b824b20",
+        "filename": "rules/src/main/java/android/support/test/annotation/WithSetting.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1103932
+      },
+      "writtenOn": "2016-12-11T15:04:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1af00ab_e428104f",
+      "revId": "5a687649f1d8e679df8b05e75dd80612c7017b48",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e1af00ab_a4ce8869",
         "filename": "rules/src/main/java/android/support/test/rule/DeviceSettingTestRule.java",
         "patchSetId": 1
@@ -53,6 +95,30 @@
       "writtenOn": "2016-12-06T18:16:49Z",
       "side": 1,
       "message": "DeviceSetting is currently under an \".internal\" package this will have to change if you\u0027re asking developers to implement it.",
+      "range": {
+        "startLine": 41,
+        "startChar": 61,
+        "endLine": 41,
+        "endChar": 74
+      },
+      "revId": "5a687649f1d8e679df8b05e75dd80612c7017b48",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aef3f70_e05be23c",
+        "filename": "rules/src/main/java/android/support/test/rule/DeviceSettingTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1103932
+      },
+      "writtenOn": "2016-12-11T15:04:26Z",
+      "side": 1,
+      "message": "could you please point me to the correct package to keep this DeviceSetting interface ?",
+      "parentUuid": "e1af00ab_a4ce8869",
       "range": {
         "startLine": 41,
         "startChar": 61,
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "daff4b21_7b23ff70",
+        "filename": "rules/src/main/java/android/support/test/rule/DeviceSettingTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1103932
+      },
+      "writtenOn": "2016-12-11T15:04:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1af00ab_44bea4b7",
+      "range": {
+        "startLine": 42,
+        "startChar": 96,
+        "endLine": 42,
+        "endChar": 103
+      },
+      "revId": "5a687649f1d8e679df8b05e75dd80612c7017b48",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e1af00ab_c4a2b495",
         "filename": "rules/src/main/java/android/support/test/rule/DeviceSettingTestRule.java",
         "patchSetId": 1
@@ -99,6 +189,30 @@
       "writtenOn": "2016-12-06T18:16:49Z",
       "side": 1,
       "message": "We can\u0027t add permissions to the our rules manifest. This is something that the test authors will have to setup in their test manifest. We should properly handle (re-throw) the case were there is no permission to set a specific setting on run time. See:\nhttps://developer.android.com/reference/android/provider/Settings.System.html#canWrite(android.content.Context)",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 31
+      },
+      "revId": "5a687649f1d8e679df8b05e75dd80612c7017b48",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "daff4b21_5b28434b",
+        "filename": "rules/src/main/java/android/support/test/rule/DeviceSettingTestRule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1103932
+      },
+      "writtenOn": "2016-12-11T15:04:26Z",
+      "side": 1,
+      "message": "As of now, I am trying to apply the given setting, in case if the SecurityExcpetion arises, I catch it and then throw the custom PermissionDenialException.\nLet me know your views on this.",
+      "parentUuid": "e1af00ab_c4a2b495",
       "range": {
         "startLine": 58,
         "startChar": 0,
